@@ -76,7 +76,7 @@ const HomePage = () => {
               <img 
                 src="https://images.unsplash.com/photo-1514222134-b57cbb8ce073?q=80&w=2000&auto=format&fit=crop"
                 alt="Sacred Himalayan Temple Pilgrimage"
-                className="w-full h-full object-cover opacity-60 scale-105 transform translate-y-1"
+                className="w-full h-full object-cover opacity-60 scale-[1.15] transform translate-y-1"
                 fetchPriority="high"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-[#0f172a]/90 via-[#1e1b4b]/60 to-[#020617]/90 mix-blend-multiply"></div>
@@ -88,7 +88,7 @@ const HomePage = () => {
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-[100px] pointer-events-none animate-pulse" style={{animationDelay: '1s'}}></div>
 
             {/* Hero Content */}
-            <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-32 pb-20">
+            <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-28 pb-20">
               <motion.div
                 initial={{ opacity: 0, scale: 0.95, y: 20 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}

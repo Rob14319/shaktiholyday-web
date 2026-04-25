@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { motion } from 'framer-motion';
 import { Search } from 'lucide-react';
@@ -10,9 +11,10 @@ import PackageCard from '@/components/PackageCard.jsx';
 import { packagesData } from '@/lib/data.js';
 
 const PackagesPage = () => {
+  const [searchParams] = useSearchParams();
   const [packages, setPackages] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '');
 
   const filteredPackages = packages.filter((pkg) => 
     pkg.title.toLowerCase().includes(searchQuery.toLowerCase()) || 

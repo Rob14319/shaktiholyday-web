@@ -1,14 +1,27 @@
 
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Phone } from 'lucide-react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Menu, X, Phone, Search } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext.jsx';
 import { Button } from '@/components/ui/button';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isSearchVisible, setIsSearchVisible] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
   const location = useLocation();
+  const navigate = useNavigate();
   const { isAuthenticated, logout } = useAuth();
+
+  const handleSearch = (e) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/packages?search=${encodeURIComponent(searchQuery.trim())}`);
+      setIsSearchVisible(false);
+      setSearchQuery('');
+      setMobileMenuOpen(false);
+    }
+  };
 
   const navLinks = [
     { name: 'Home', path: '/' },
@@ -52,7 +65,41 @@ const Header = () => {
             ))}
             
             <div className="flex items-center gap-4 ml-4 border-l border-border pl-8">
-              <a href="tel:+919815649468" className="flex items-center text-sm font-medium text-foreground hover:text-primary transition-colors">
+              {/* Desktop Search */}
+              <div className="relative flex items-center">
+                {isSearchVisible ? (
+                  <form onSubmit={handleSearch} className="relative animate-in fade-in slide-in-from-right-4 duration-300">
+                    <input
+                      type="text"
+                      placeholder="Search journeys..."
+                      value={searchQuery}
+                      onChange={(e) => setSearchQuery(e.target.value)}
+                      autoFocus
+                      className="w-48 lg:w-64 h-10 pl-4 pr-10 rounded-full border border-border bg-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all text-sm"
+                    />
+                    <button type="submit" className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-primary transition-colors">
+                      <Search size={16} />
+                    </button>
+                    <button 
+                      type="button" 
+                      onClick={() => setIsSearchVisible(false)}
+                      className="ml-2 p-2 text-muted-foreground hover:text-primary transition-colors"
+                    >
+                      <X size={16} />
+                    </button>
+                  </form>
+                ) : (
+                  <button 
+                    onClick={() => setIsSearchVisible(true)}
+                    className="p-2 text-foreground hover:text-primary transition-colors duration-200"
+                    aria-label="Search"
+                  >
+                    <Search size={20} />
+                  </button>
+                )}
+              </div>
+
+              <a href="tel:+919815649468" className="flex items-center text-sm font-medium text-foreground hover:text-primary transition-colors ml-2">
                 <Phone size={16} className="mr-2 text-primary" />
                 +91 9815649468
               </a>
@@ -101,6 +148,22 @@ const Header = () => {
                   {link.name}
                 </Link>
               ))}
+              
+              {/* Mobile Search */}
+              <form onSubmit={handleSearch} className="px-4 py-2 mt-2">
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="Search journeys..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full h-11 pl-4 pr-11 rounded-xl border border-border bg-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all"
+                  />
+                  <button type="submit" className="absolute right-3 top-1/2 -translate-y-1/2 text-primary">
+                    <Search size={20} />
+                  </button>
+                </div>
+              </form>
               
               <div className="h-px bg-border my-2"></div>
               
