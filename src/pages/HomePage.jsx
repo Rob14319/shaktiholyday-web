@@ -70,7 +70,7 @@ const HomePage = () => {
 
         <main className="flex-grow">
           {/* Hero Section */}
-          <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-slate-950">
+          <section className="relative min-h-[calc(100vh-5rem)] flex items-center justify-center overflow-hidden bg-slate-950">
             {/* Background Image & Overlays */}
             <div className="absolute inset-0 z-0">
               <img 
