@@ -138,5 +138,185 @@ export const packagesData = [
     "price": 13999,
     "title": "Dwarka Krishna's Kingdom",
     "updated": "2026-04-23 10:19:24.205Z"
+  },
+  {
+    "id": "shimla-manali-escape",
+    "title": "Shimla–Manali Divine Escape",
+    "description": "Spiritual Highlights: Jakhoo Temple, Hadimba Devi Temple. Experience the cool mountain air and colonial charm mixed with deep spiritual roots in the Himalayas.",
+    "destination": "Shimla & Manali, HP",
+    "duration": "6 Days",
+    "price": 18999,
+    "itinerary": "Day 1: Arrival in Shimla - Arrive and explore Mall Road. \nDay 2: Kufri & Jakhoo Temple - Visit highest altitude Hanuman temple. \nDay 3: Drive to Manali - Scenic journey through valleys. \nDay 4: Manali Sightseeing - Hadimba Devi Temple and Vashisht hot springs. \nDay 5: Solang Valley - Adventure and scenic views. \nDay 6: Departure."
+  },
+  {
+    "id": "goa-heritage-tour",
+    "title": "Goa Heritage & Spiritual Tour",
+    "description": "Spiritual Highlights: Basilica of Bom Jesus, Mangeshi Temple. Discover the UNESCO heritage sites and profound Hindu temples nestled in tropical paradise.",
+    "destination": "Goa",
+    "duration": "5 Days",
+    "price": 16999,
+    "itinerary": "Day 1: Arrival in Goa - Check-in and beach relaxation. \nDay 2: North Goa Sightseeing - Calangute, Baga, Fort Aguada. \nDay 3: Old Goa Temples - Basilica of Bom Jesus, Shri Mangeshi Temple. \nDay 4: South Goa & Leisure - Miramar Beach, Dona Paula. \nDay 5: Departure."
+  },
+  {
+    "id": "kashmir-scenic-spiritual",
+    "title": "Kashmir Scenic & Spiritual Tour",
+    "description": "Spiritual Highlights: Shankaracharya Temple, Hazratbal Shrine. Experience the profound peace and panoramic beauty of 'Heaven on Earth'.",
+    "destination": "Srinagar & Gulmarg, J&K",
+    "duration": "6 Days",
+    "price": 21999,
+    "itinerary": "Day 1: Arrival in Srinagar - Houseboat stay and Shikara ride. \nDay 2: Srinagar Sightseeing - Shankaracharya Temple, Mughal Gardens, Hazratbal Shrine. \nDay 3: Srinagar to Gulmarg - Scenic landscapes and Gondola ride. \nDay 4: Pahalgam - Betaab and Aru Valley. \nDay 5: Return to Srinagar - Shopping and leisure. \nDay 6: Departure."
+  },
+  {
+    "id": "kerala-temple-tour",
+    "title": "Kerala Backwaters + Temple Tour",
+    "description": "Spiritual Highlights: Guruvayur Temple. A perfect blend of southern coastal beauty, backwaters, and the divine grace of Lord Krishna at Guruvayur.",
+    "destination": "Kochi & Munnar, Kerala",
+    "duration": "7 Days",
+    "price": 24999,
+    "itinerary": "Day 1: Arrival in Kochi - Fort Kochi and local markets. \nDay 2: Drive to Munnar - Tea plantations and waterfalls. \nDay 3: Munnar Sightseeing - Eravikulam National Park, Tea Museum. \nDay 4: Alleppey Houseboat - Backwater cruise. \nDay 5: Guruvayur Temple - Darshan of Lord Krishna. \nDay 6: Cultural Experience - Leisure or Kathakali. \nDay 7: Departure."
+  },
+  {
+    "id": "dharamshala-spiritual",
+    "title": "Dharamshala Spiritual Hills",
+    "description": "Spiritual Highlights: Dalai Lama Temple. Find peace in the Tibetan-influenced hills of McLeodganj, surrounded by cedar forests and prayer wheels.",
+    "destination": "Dharamshala, HP",
+    "duration": "5 Days",
+    "price": 15999,
+    "itinerary": "Day 1: Arrival - Check-in and leisure. \nDay 2: McLeodganj - Dalai Lama Temple Complex and Namgyal Monastery. \nDay 3: Bhagsu Nag - Temple and waterfall visit. \nDay 4: Norbulingka Institute - Local exploration and tea gardens. \nDay 5: Departure."
+  },
+  {
+    "id": "dalhousie-khajjiar-retreat",
+    "title": "Dalhousie–Khajjiar Retreat",
+    "description": "Spiritual Highlights: Chamunda Devi Temple. Explore the serene hill town and the “Mini Switzerland of India” with a visit to the sacred Chamunda Devi.",
+    "destination": "Dalhousie & Khajjiar, HP",
+    "duration": "4 Days",
+    "price": 12999,
+    "itinerary": "Day 1: Arrival in Dalhousie - Explore Subhash Chowk. \nDay 2: Local Sightseeing - Panchpula, Satdhara Falls, Chamunda Devi Temple. \nDay 3: Khajjiar Excursion - Meadows and Khajji Nag Temple. \nDay 4: Departure."
+  },
+  {
+    "id": "kasol-manikaran-bliss",
+    "title": "Kasol–Manikaran Bliss",
+    "description": "Spiritual Highlights: Manikaran Sahib. Enjoy the peaceful Parvati River and the healing hot springs of the famous Manikaran Sahib Gurudwara.",
+    "destination": "Kasol & Manikaran, HP",
+    "duration": "4 Days",
+    "price": 9999,
+    "itinerary": "Day 1: Arrival in Kasol - Riverside relaxation. \nDay 2: Manikaran Excursion - Hot springs and Gurudwara visit. \nDay 3: Leisure and Nature Walks - Explore nearby villages. \nDay 4: Departure."
+  },
+  {
+    "id": "himachal-grand-tour",
+    "title": "Himachal Grand Tour",
+    "description": "Spiritual Highlights: Jakhoo Temple, Hadimba Temple, Dalai Lama Temple. A comprehensive journey across the most sacred and scenic spots of Himachal Pradesh.",
+    "destination": "Shimla, Manali, Dharamshala, Dalhousie",
+    "duration": "10 Days",
+    "price": 34999,
+    "itinerary": "Day 1: Arrival in Shimla. \nDay 2: Shimla Sightseeing - Kufri and Jakhoo Temple. \nDay 3: Shimla to Manali - Scenic drive. \nDay 4: Manali Sightseeing - Hadimba and Vashisht Temple. \nDay 5: Solang Valley. \nDay 6: Manali to Dharamshala. \nDay 7: Dharamshala Sightseeing - Dalai Lama Temple. \nDay 8: Dharamshala to Dalhousie. \nDay 9: Khajjiar Excursion. \nDay 10: Departure."
+  },
+  {
+    "id": "amritsar-cultural-tour",
+    "title": "Amritsar Cultural Tour",
+    "description": "Spiritual Highlights: Durgiana Temple. Experience the deep history of Jallianwala Bagh and the spiritual vibes of the Lakshmi Narayan (Durgiana) Temple.",
+    "destination": "Amritsar, Punjab",
+    "duration": "3 Days",
+    "price": 7999,
+    "itinerary": "Day 1: Arrival in Amritsar - Visit Jallianwala Bagh. \nDay 2: City Tour & Wagah Border - Durgiana Temple and evening ceremony. \nDay 3: Departure."
+  },
+  {
+    "id": "goa-relaxation-temple-trail",
+    "title": "Goa Relaxation + Temple Trail",
+    "description": "Spiritual Highlights: Shantadurga Temple. A unique blend of coastal relaxation and a trail through Goa's powerful and historic temples.",
+    "destination": "Goa",
+    "duration": "6 Days",
+    "price": 17999,
+    "itinerary": "Day 1: Arrival in Goa. \nDay 2: North Goa Tour. \nDay 3: Temple Visit - Shantadurga Temple. \nDay 4: South Goa Exploration. \nDay 5: Leisure Day. \nDay 6: Departure."
+  },
+  {
+    "id": "kashmir-leisure-escape",
+    "title": "Kashmir Leisure Escape",
+    "description": "Spiritual Highlights: Local shrine visit. An escape to the tranquil waters of Srinagar and the snow-capped heights of Gulmarg.",
+    "destination": "Srinagar & Gulmarg",
+    "duration": "5 Days",
+    "price": 18999,
+    "itinerary": "Day 1: Arrival in Srinagar - Houseboat and Shikara ride. \nDay 2: Local Sightseeing - Mughal Gardens and local shrine. \nDay 3: Gulmarg Excursion. \nDay 4: Leisure Day - Shopping and relaxation. \nDay 5: Departure."
+  },
+  {
+    "id": "kerala-hills-healing",
+    "title": "Kerala Hills & Healing Tour",
+    "description": "Spiritual Highlights: Local temples. A rejuvenating journey through the Western Ghats, featuring Ayurvedic healing and sacred temple visits.",
+    "destination": "Kochi, Munnar, Alleppey",
+    "duration": "8 Days",
+    "price": 27999,
+    "itinerary": "Day 1: Arrival in Kochi. \nDay 2: Kochi to Munnar. \nDay 3: Munnar Sightseeing. \nDay 4: Munnar to Thekkady. \nDay 5: Thekkady to Alleppey - Houseboat stay. \nDay 6: Ayurveda Experience. \nDay 7: Temple Visit & Leisure. \nDay 8: Departure."
+  },
+  {
+    "id": "tamil-nadu-heritage",
+    "title": "Tamil Nadu Heritage Tour",
+    "description": "Spiritual Highlights: Meenakshi Temple. Discover the architectural marvels of the South, centered around the life-changing energy of the Meenakshi Amman Temple.",
+    "destination": "Chennai, Mahabalipuram, Madurai",
+    "duration": "7 Days",
+    "price": 22999,
+    "itinerary": "Day 1: Arrival in Chennai. \nDay 2: Chennai to Mahabalipuram - Shore temples. \nDay 3: Mahabalipuram to Madurai. \nDay 4: Meenakshi Temple Visit. \nDay 5: Local Sightseeing. \nDay 6: Return Journey / Leisure. \nDay 7: Departure."
+  },
+  {
+    "id": "karnataka-culture-temples",
+    "title": "Karnataka Culture & Temples",
+    "description": "Spiritual Highlights: Chamundeshwari Temple. A journey through the royal heritage of Mysore and the spiritual heights of the Chamundi Hills.",
+    "destination": "Bangalore, Mysore, Coorg",
+    "duration": "6 Days",
+    "price": 19999,
+    "itinerary": "Day 1: Arrival in Bangalore - Local sightseeing. \nDay 2: Bangalore to Mysore - Visit the grand palace. \nDay 3: Chamundi Hills - Chamundeshwari Temple visit. \nDay 4: Mysore to Coorg - Scenic drive. \nDay 5: Coorg Sightseeing - Coffee plantations and waterfalls. \nDay 6: Departure."
+  },
+  {
+    "id": "sikkim-monastery-nature",
+    "title": "Sikkim Monastery & Nature Tour",
+    "description": "Spiritual Highlights: Rumtek Monastery. Experience the serene spirituality of Tibetan Buddhism amidst the breathtaking peaks of the Eastern Himalayas.",
+    "destination": "Gangtok, Sikkim",
+    "duration": "6 Days",
+    "price": 23999,
+    "itinerary": "Day 1: Arrival in Gangtok - Leisure time. \nDay 2: Gangtok Sightseeing - Rumtek Monastery. \nDay 3: Tsomgo Lake Excursion - Visit Baba Mandir. \nDay 4: Leisure Day - Explore local markets. \nDay 5: Optional Excursion - Nearby viewpoints. \nDay 6: Departure."
+  },
+  {
+    "id": "odisha-culture-temple",
+    "title": "Odisha Culture & Temple Tour",
+    "description": "Spiritual Highlights: Jagannath Temple. Explore the 'Temple City' of Bhubaneswar and the world-famous Jagannath Temple at the sacred coast of Puri.",
+    "destination": "Bhubaneswar, Puri, Konark",
+    "duration": "6 Days",
+    "price": 16999,
+    "itinerary": "Day 1: Arrival in Bhubaneswar - Local temple visits. \nDay 2: Bhubaneswar Sightseeing - Lingaraj Temple. \nDay 3: Bhubaneswar to Puri - Relax at the beach. \nDay 4: Jagannath Temple Visit - Darshan and exploration. \nDay 5: Konark Excursion - Visit the majestic Sun Temple. \nDay 6: Departure."
+  },
+  {
+    "id": "gujarat-heritage-somnath",
+    "title": "Gujarat Heritage Tour",
+    "description": "Spiritual Highlights: Somnath Temple. Visit the first of the twelve Jyotirlinga shrines of Shiva, set against the waves of the Arabian Sea.",
+    "destination": "Somnath & Diu, Gujarat",
+    "duration": "5 Days",
+    "price": 14999,
+    "itinerary": "Day 1: Arrival in Somnath - Evening temple visit. \nDay 2: Somnath Darshan - Morning darshan and sightseeing. \nDay 3: Somnath to Diu - Coastal relaxation. \nDay 4: Diu Exploration - Forts and beaches. \nDay 5: Departure."
+  },
+  {
+    "id": "maharashtra-spiritual-city",
+    "title": "Maharashtra Spiritual + City Tour",
+    "description": "Spiritual Highlights: Shirdi Sai Baba Temple. A path of devotion to Sai Baba and the sacred Trimbakeshwar, leading to the vibrant energy of Mumbai.",
+    "destination": "Shirdi, Nashik, Mumbai",
+    "duration": "6 Days",
+    "price": 18999,
+    "itinerary": "Day 1: Arrival in Shirdi - Temple visit. \nDay 2: Shirdi Darshan - Attend morning Aarti. \nDay 3: Shirdi to Nashik - Trimbakeshwar Temple. \nDay 4: Nashik to Mumbai - City transition. \nDay 5: Mumbai Sightseeing - Gateway of India, Marine Drive. \nDay 6: Departure."
+  },
+  {
+    "id": "delhi-city-faith",
+    "title": "Delhi City & Faith Tour",
+    "description": "Spiritual Highlights: Akshardham, Lotus Temple. Discover the architectural wonders of modern devotion in India's historic capital.",
+    "destination": "New Delhi",
+    "duration": "4 Days",
+    "price": 11999,
+    "itinerary": "Day 1: Arrival in Delhi - Leisure time. \nDay 2: Old Delhi Tour - Jama Masjid, Chandni Chowk. \nDay 3: New Delhi Tour - Akshardham and Lotus Temple. \nDay 4: Departure."
+  },
+  {
+    "id": "uttarakhand-nature-temples-almora",
+    "title": "Uttarakhand Nature + Temples",
+    "description": "Spiritual Highlights: Jageshwar Temples. Retreat into the ancient cedar forests of Almora to find the cluster of 124 stone temples of Jageshwar.",
+    "destination": "Almora, Uttarakhand",
+    "duration": "6 Days",
+    "price": 15999,
+    "itinerary": "Day 1: Arrival in Almora - Relaxation. \nDay 2: Almora Sightseeing - Viewpoints and markets. \nDay 3: Jageshwar Visit - Ancient temple complex darshan. \nDay 4: Nature Exploration - Short hikes. \nDay 5: Leisure Day - Local experiences. \nDay 6: Departure."
   }
 ];
