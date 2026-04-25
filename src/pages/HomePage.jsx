@@ -79,8 +79,8 @@ const HomePage = () => {
                 className="w-full h-full object-cover opacity-60 scale-[1.15] transform translate-y-1"
                 fetchPriority="high"
               />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#0f172a]/90 via-[#1e1b4b]/60 to-[#020617]/90 mix-blend-multiply"></div>
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-[#0f172a]/50 via-[#1e1b4b]/70 to-[#020617]/95 mix-blend-multiply"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-background from-0% via-transparent via-30% to-transparent"></div>
             </div>
 
             {/* Glowing Accent Orbs */}
