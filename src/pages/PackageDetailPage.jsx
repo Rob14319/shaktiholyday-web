@@ -69,8 +69,8 @@ const PackageDetailPage = () => {
 
   const defaultImage = 'https://images.unsplash.com/photo-1514222134-b57cbb8ce073?w=1200&h=800&fit=crop';
   
-  // Since we are using hardcoded data without images, we use beautiful default spiritual images
-  const images = [defaultImage];
+  // Use the images from the package data if available, otherwise fallback to default
+  const images = (pkg?.images && pkg.images.length > 0) ? pkg.images : [defaultImage];
 
   // Parse itinerary text into structured days
   const itineraryLines = pkg.itinerary ? pkg.itinerary.split('\n').filter(line => line.trim()) : [];

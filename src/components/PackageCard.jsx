@@ -8,8 +8,8 @@ import { Button } from '@/components/ui/button';
 const PackageCard = ({ pkg }) => {
   const defaultImage = 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=400&h=300&fit=crop';
   
-  // Since we use hardcoded text without images, fallback to the beautiful aesthetic unsplash default image
-  const imgSrc = defaultImage;
+  // Use the first image from pkg.images if available, otherwise fallback to default
+  const imgSrc = (pkg?.images && pkg.images.length > 0) ? pkg.images[0] : defaultImage;
 
   const whatsappMessage = encodeURIComponent(`Hi ShaktiHolyday! I'm interested in the ${pkg?.title} (${pkg?.duration}). Please share customized pricing and details for my group. I'd like to discuss my specific requirements.`);
 
