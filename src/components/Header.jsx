@@ -120,14 +120,26 @@ const Header = () => {
             </div>
           </nav>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 text-foreground hover:text-primary transition-colors duration-200"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          {/* Mobile Search and Menu Buttons */}
+          <div className="md:hidden flex items-center gap-2">
+            <button
+              className="p-2 text-foreground hover:text-primary transition-colors duration-200"
+              onClick={() => {
+                setMobileMenuOpen(true);
+                // We'll let the user focus the search input manually or we can add logic to focus it.
+              }}
+              aria-label="Search"
+            >
+              <Search size={24} />
+            </button>
+            <button
+              className="p-2 text-foreground hover:text-primary transition-colors duration-200"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
