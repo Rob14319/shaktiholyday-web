@@ -1,0 +1,22 @@
+﻿commit b1583d8b2b55ca67d1c0efdb1feaa002a6272488
+Author: Robin <robinburdewa25@gmail.com>
+Date:   Sat Apr 25 15:43:09 2026 +0530
+
+    feat: add package data and supporting images to the application library
+
+public/images/packages/Drlhi City.webp
+public/images/packages/Goa.webp
+public/images/packages/Gujarat Heritage.webp
+public/images/packages/Himachal.webp
+public/images/packages/Maharashtra spiritual.webp
+public/images/packages/Odisha culture.webp
+public/images/packages/amritsar.webp
+public/images/packages/dharmshala.webp
+public/images/packages/goa relax.webp
+public/images/packages/kashmir leisure.webp
+public/images/packages/kashmir.webp
+public/images/packages/kasol.webp
+public/images/packages/kerala hills.webp
+public/images/packages/kerala.webp
+public/images/packages/tamilnadu heritage.webp
+src/lib/data.js

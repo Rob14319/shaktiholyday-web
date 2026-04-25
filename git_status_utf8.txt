@@ -1,0 +1,48 @@
+﻿On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	git_status.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+origin	https://github.com/Rob14319/shaktiholyday-web.git (fetch)
+origin	https://github.com/Rob14319/shaktiholyday-web.git (push)
+
+
+    Directory: C:\Users\LENOVO\Desktop\Shakti-website
+
+
+Mode                 LastWriteTime         Length Name       
+----                 -------------         ------ ----       
+d-----        24-04-2026     20:20                node_module
+                                                  s          
+d-----        25-04-2026     11:36                public     
+d-----        24-04-2026     19:31                src        
+-a----        25-04-2026     08:44             14 .gitignore 
+-a----        24-04-2026     19:31            481 components.
+                                                  json       
+-a----        24-04-2026     19:31           2321 eslint.conf
+                                                  ig.mjs     
+-a----        25-04-2026     20:06            866 git_status.
+                                                  txt        
+-a----        24-04-2026     19:31            399 index.html 
+-a----        24-04-2026     19:31            107 jsconfig.js
+                                                  on         
+-a----        24-04-2026     20:00          34332 npm_install
+                                                  _log.txt   
+-a----        24-04-2026     20:19         301709 package-loc
+                                                  k.json     
+-a----        25-04-2026     08:44           2798 package.jso
+                                                  n          
+-a----        24-04-2026     19:31             75 postcss.con
+                                                  fig.js     
+-a----        24-04-2026     19:31           2698 tailwind.co
+                                                  nfig.js    
+-a----        24-04-2026     19:52            722 vite.config
+                                                  .js        
+-a----        24-04-2026     20:33           1005 vite_log.tx
+                                                  t          
+
+
