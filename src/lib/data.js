@@ -145,6 +145,7 @@ export const packagesData = [
     "description": "Spiritual Highlights: Jakhoo Temple, Hadimba Devi Temple. Experience the cool mountain air and colonial charm mixed with deep spiritual roots in the Himalayas.",
     "destination": "Shimla & Manali, HP",
     "duration": "6 Days",
+    "images": ["/images/packages/Himachal.webp"],
     "price": 18999,
     "itinerary": "Day 1: Arrival in Shimla - Arrive and explore Mall Road. \nDay 2: Kufri & Jakhoo Temple - Visit highest altitude Hanuman temple. \nDay 3: Drive to Manali - Scenic journey through valleys. \nDay 4: Manali Sightseeing - Hadimba Devi Temple and Vashisht hot springs. \nDay 5: Solang Valley - Adventure and scenic views. \nDay 6: Departure."
   },
@@ -194,6 +195,7 @@ export const packagesData = [
     "description": "Spiritual Highlights: Chamunda Devi Temple. Explore the serene hill town and the “Mini Switzerland of India” with a visit to the sacred Chamunda Devi.",
     "destination": "Dalhousie & Khajjiar, HP",
     "duration": "4 Days",
+    "images": ["/images/packages/Himachal.webp"],
     "price": 12999,
     "itinerary": "Day 1: Arrival in Dalhousie - Explore Subhash Chowk. \nDay 2: Local Sightseeing - Panchpula, Satdhara Falls, Chamunda Devi Temple. \nDay 3: Khajjiar Excursion - Meadows and Khajji Nag Temple. \nDay 4: Departure."
   },
@@ -332,6 +334,115 @@ export const packagesData = [
     "destination": "Almora, Uttarakhand",
     "duration": "6 Days",
     "price": 15999,
-    "itinerary": "Day 1: Arrival in Almora - Relaxation. \nDay 2: Almora Sightseeing - Viewpoints and markets. \nDay 3: Jageshwar Visit - Ancient temple complex darshan. \nDay 4: Nature Exploration - Short hikes. \nDay 5: Leisure Day - Local experiences. \nDay 6: Departure."
+  },
+  {
+    "id": "rajasthan-royal-tour",
+    "title": "Rajasthan Royal Tour",
+    "description": "Experience the royal heritage, magnificent forts, and vibrant culture of Rajasthan.",
+    "destination": "Rajasthan",
+    "duration": "7 Days",
+    "images": ["/images/packages/Rajasthan.webp"],
+    "price": 24999,
+    "itinerary": "Day 1: Arrival in Jaipur. \nDay 2: Jaipur Sightseeing - Amber Fort and City Palace. \nDay 3: Jaipur to Jodhpur. \nDay 4: Jodhpur Sightseeing - Mehrangarh Fort. \nDay 5: Jodhpur to Udaipur. \nDay 6: Udaipur Sightseeing - City Palace and Lake Pichola. \nDay 7: Departure from Udaipur."
+  },
+  {
+    "id": "bali-tropical-escape",
+    "title": "Bali Tropical Escape",
+    "description": "Discover the lush landscapes, pristine beaches, and vibrant culture of Bali.",
+    "destination": "Bali, Indonesia",
+    "duration": "6 Days",
+    "images": ["/images/packages/Bali.webp"],
+    "price": 45999,
+    "itinerary": "Day 1: Arrival in Bali. \nDay 2: Explore Ubud - Monkey Forest and Rice Terraces. \nDay 3: Kintamani Volcano Tour. \nDay 4: Water Sports in Tanjung Benoa. \nDay 5: Uluwatu Temple and Kecak Dance. \nDay 6: Departure from Bali."
+  },
+  {
+    "id": "thailand-exotic-journey",
+    "title": "Thailand Exotic Journey",
+    "description": "Experience the bustling streets of Bangkok and the beautiful beaches of Phuket.",
+    "destination": "Thailand",
+    "duration": "6 Days",
+    "images": ["/images/packages/Thailand.webp"],
+    "price": 35999,
+    "itinerary": "Day 1: Arrival in Bangkok. \nDay 2: Bangkok City Tour - Grand Palace and Temples. \nDay 3: Bangkok to Phuket. \nDay 4: Phi Phi Island Tour. \nDay 5: Leisure Day at Phuket Beaches. \nDay 6: Departure from Phuket."
+  },
+  {
+    "id": "ek-dham-yatra",
+    "title": "Ek Dham Yatra",
+    "description": "Embark on a sacred journey to one of the holy Dhams, seeking divine blessings.",
+    "destination": "Kedarnath or Badrinath",
+    "duration": "5 Days",
+    "images": ["/images/packages/ek_dham.webp"],
+    "price": 16999,
+    "itinerary": "Day 1: Arrival in Haridwar/Rishikesh. \nDay 2: Drive to the Base Camp. \nDay 3: Trek/Drive to the Shrine and Darshan. \nDay 4: Return to Base Camp and Drive to Haridwar. \nDay 5: Departure from Haridwar/Rishikesh."
+  },
+  {
+    "id": "do-dham-yatra",
+    "title": "Do Dham Yatra",
+    "description": "A spiritual pilgrimage to two sacred Dhams, Kedarnath and Badrinath, for ultimate peace.",
+    "destination": "Kedarnath & Badrinath, Uttarakhand",
+    "duration": "7 Days",
+    "images": ["/images/packages/do_dham.webp"],
+    "price": 25999,
+    "itinerary": "Day 1: Arrival in Haridwar. \nDay 2: Haridwar to Guptkashi. \nDay 3: Guptkashi to Kedarnath and Darshan. \nDay 4: Kedarnath to Guptkashi. \nDay 5: Guptkashi to Badrinath and Darshan. \nDay 6: Badrinath to Rishikesh. \nDay 7: Departure from Rishikesh."
+  },
+  {
+    "id": "panch-kedar-yatra",
+    "title": "Panch Kedar Yatra",
+    "description": "A divine trek covering the five sacred temples of Lord Shiva in the Garhwal Himalayas.",
+    "destination": "Garhwal Himalayas, Uttarakhand",
+    "duration": "14 Days",
+    "images": ["/images/packages/panch_kedar.webp"],
+    "price": 35999,
+    "itinerary": "Day 1: Arrival in Rishikesh. \nDay 2: Rishikesh to Guptkashi. \nDay 3-4: Kedarnath Darshan and Trek. \nDay 5-6: Madhyamaheshwar Trek. \nDay 7-8: Tungnath Trek. \nDay 9-10: Rudranath Trek. \nDay 11-12: Kalpeshwar Trek. \nDay 13: Return to Rishikesh. \nDay 14: Departure from Rishikesh."
+  },
+  {
+    "id": "panch-badri-yatra",
+    "title": "Panch Badri Yatra",
+    "description": "A sacred journey to the five holy shrines of Lord Vishnu in the Himalayas.",
+    "destination": "Uttarakhand",
+    "duration": "8 Days",
+    "images": ["/images/packages/panch_badri.webp"],
+    "price": 28999,
+    "itinerary": "Day 1: Arrival in Haridwar. \nDay 2: Haridwar to Joshimath. \nDay 3: Vridha Badri and Bhavishya Badri Darshan. \nDay 4: Yogadhyan Badri and Dhyan Badri Darshan. \nDay 5: Vishal Badri (Badrinath) Darshan. \nDay 6: Badrinath to Rudraprayag. \nDay 7: Rudraprayag to Rishikesh. \nDay 8: Departure from Rishikesh."
+  },
+  {
+    "id": "mansarovar-yatra",
+    "title": "Kailash Mansarovar Yatra",
+    "description": "The ultimate pilgrimage to Mount Kailash and the sacred Lake Mansarovar.",
+    "destination": "Tibet (via Nepal/India)",
+    "duration": "14 Days",
+    "images": ["/images/packages/mansarovar.webp"],
+    "price": 155000,
+    "itinerary": "Day 1: Arrival in Kathmandu (or Base). \nDay 2: Kathmandu Sightseeing and Briefing. \nDay 3-5: Journey to the Tibetan Border and Acclimatization. \nDay 6-8: Drive to Lake Mansarovar and Holy Dip. \nDay 9-11: Mount Kailash Parikrama (Trek). \nDay 12-13: Return Journey to Kathmandu. \nDay 14: Departure from Kathmandu."
+  },
+  {
+    "id": "kinnour-kailash",
+    "title": "Kinnour Kailash Trek",
+    "description": "A challenging and spiritually uplifting trek to the sacred Kinner Kailash peak.",
+    "destination": "Kinnaur, Himachal Pradesh",
+    "duration": "10 Days",
+    "images": ["/images/packages/kinnaur_kailash.webp"],
+    "price": 32999,
+    "itinerary": "Day 1: Departure from Delhi to Shimla. \nDay 2: Shimla to Kalpa. \nDay 3: Acclimatization in Kalpa. \nDay 4: Kalpa to Trek Base. \nDay 5-7: Trek to Kinner Kailash Shivling and Return. \nDay 8: Base to Sangla. \nDay 9: Sangla to Shimla. \nDay 10: Return to Delhi."
+  },
+  {
+    "id": "treks-uttarakhand",
+    "title": "Treks in Uttarakhand",
+    "description": "Explore the majestic trails of Uttarakhand, from Valley of Flowers to Roopkund.",
+    "destination": "Uttarakhand",
+    "duration": "7 Days",
+    "images": ["/images/packages/uttarakhand_treks.webp"],
+    "price": 18999,
+    "itinerary": "Day 1: Departure from Delhi to Dehradun/Rishikesh. \nDay 2: Drive to Trek Base Camp. \nDay 3-5: Guided Trekking through Alpine Meadows and Peaks. \nDay 6: Return to Base Camp and Drive to Rishikesh. \nDay 7: Return to Delhi."
+  },
+  {
+    "id": "treks-himachal",
+    "title": "Treks in Himachal",
+    "description": "Discover the thrilling trails of Himachal Pradesh, including Hampta Pass and Kheerganga.",
+    "destination": "Himachal Pradesh",
+    "duration": "6 Days",
+    "images": ["/images/packages/himachal_treks.webp"],
+    "price": 16999,
+    "itinerary": "Day 1: Departure from Delhi to Manali/Kasol. \nDay 2: Drive to Trek Starting Point. \nDay 3-4: Ascend through Valleys and Forests. \nDay 5: Descend to Base and Explore Local Culture. \nDay 6: Return to Delhi."
   }
 ];

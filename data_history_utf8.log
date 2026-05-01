@@ -1,0 +1,666 @@
+﻿commit b1583d8b2b55ca67d1c0efdb1feaa002a6272488
+Author: Robin <robinburdewa25@gmail.com>
+Date:   Sat Apr 25 15:43:09 2026 +0530
+
+    feat: add package data and supporting images to the application library
+
+diff --git a/src/lib/data.js b/src/lib/data.js
+index 4940a1e..0be32ec 100644
+--- a/src/lib/data.js
++++ b/src/lib/data.js
+@@ -154,6 +154,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Basilica of Bom Jesus, Mangeshi Temple. Discover the UNESCO heritage sites and profound Hindu temples nestled in tropical paradise.",
+     "destination": "Goa",
+     "duration": "5 Days",
++    "images": ["/images/packages/Goa.webp"],
+     "price": 16999,
+     "itinerary": "Day 1: Arrival in Goa - Check-in and beach relaxation. \nDay 2: North Goa Sightseeing - Calangute, Baga, Fort Aguada. \nDay 3: Old Goa Temples - Basilica of Bom Jesus, Shri Mangeshi Temple. \nDay 4: South Goa & Leisure - Miramar Beach, Dona Paula. \nDay 5: Departure."
+   },
+@@ -163,6 +164,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Shankaracharya Temple, Hazratbal Shrine. Experience the profound peace and panoramic beauty of 'Heaven on Earth'.",
+     "destination": "Srinagar & Gulmarg, J&K",
+     "duration": "6 Days",
++    "images": ["/images/packages/kashmir.webp"],
+     "price": 21999,
+     "itinerary": "Day 1: Arrival in Srinagar - Houseboat stay and Shikara ride. \nDay 2: Srinagar Sightseeing - Shankaracharya Temple, Mughal Gardens, Hazratbal Shrine. \nDay 3: Srinagar to Gulmarg - Scenic landscapes and Gondola ride. \nDay 4: Pahalgam - Betaab and Aru Valley. \nDay 5: Return to Srinagar - Shopping and leisure. \nDay 6: Departure."
+   },
+@@ -172,6 +174,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Guruvayur Temple. A perfect blend of southern coastal beauty, backwaters, and the divine grace of Lord Krishna at Guruvayur.",
+     "destination": "Kochi & Munnar, Kerala",
+     "duration": "7 Days",
++    "images": ["/images/packages/kerala.webp"],
+     "price": 24999,
+     "itinerary": "Day 1: Arrival in Kochi - Fort Kochi and local markets. \nDay 2: Drive to Munnar - Tea plantations and waterfalls. \nDay 3: Munnar Sightseeing - Eravikulam National Park, Tea Museum. \nDay 4: Alleppey Houseboat - Backwater cruise. \nDay 5: Guruvayur Temple - Darshan of Lord Krishna. \nDay 6: Cultural Experience - Leisure or Kathakali. \nDay 7: Departure."
+   },
+@@ -181,6 +184,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Dalai Lama Temple. Find peace in the Tibetan-influenced hills of McLeodganj, surrounded by cedar forests and prayer wheels.",
+     "destination": "Dharamshala, HP",
+     "duration": "5 Days",
++    "images": ["/images/packages/dharmshala.webp"],
+     "price": 15999,
+     "itinerary": "Day 1: Arrival - Check-in and leisure. \nDay 2: McLeodganj - Dalai Lama Temple Complex and Namgyal Monastery. \nDay 3: Bhagsu Nag - Temple and waterfall visit. \nDay 4: Norbulingka Institute - Local exploration and tea gardens. \nDay 5: Departure."
+   },
+@@ -199,6 +203,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Manikaran Sahib. Enjoy the peaceful Parvati River and the healing hot springs of the famous Manikaran Sahib Gurudwara.",
+     "destination": "Kasol & Manikaran, HP",
+     "duration": "4 Days",
++    "images": ["/images/packages/kasol.webp"],
+     "price": 9999,
+     "itinerary": "Day 1: Arrival in Kasol - Riverside relaxation. \nDay 2: Manikaran Excursion - Hot springs and Gurudwara visit. \nDay 3: Leisure and Nature Walks - Explore nearby villages. \nDay 4: Departure."
+   },
+@@ -208,6 +213,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Jakhoo Temple, Hadimba Temple, Dalai Lama Temple. A comprehensive journey across the most sacred and scenic spots of Himachal Pradesh.",
+     "destination": "Shimla, Manali, Dharamshala, Dalhousie",
+     "duration": "10 Days",
++    "images": ["/images/packages/Himachal.webp"],
+     "price": 34999,
+     "itinerary": "Day 1: Arrival in Shimla. \nDay 2: Shimla Sightseeing - Kufri and Jakhoo Temple. \nDay 3: Shimla to Manali - Scenic drive. \nDay 4: Manali Sightseeing - Hadimba and Vashisht Temple. \nDay 5: Solang Valley. \nDay 6: Manali to Dharamshala. \nDay 7: Dharamshala Sightseeing - Dalai Lama Temple. \nDay 8: Dharamshala to Dalhousie. \nDay 9: Khajjiar Excursion. \nDay 10: Departure."
+   },
+@@ -217,6 +223,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Durgiana Temple. Experience the deep history of Jallianwala Bagh and the spiritual vibes of the Lakshmi Narayan (Durgiana) Temple.",
+     "destination": "Amritsar, Punjab",
+     "duration": "3 Days",
++    "images": ["/images/packages/amritsar.webp"],
+     "price": 7999,
+     "itinerary": "Day 1: Arrival in Amritsar - Visit Jallianwala Bagh. \nDay 2: City Tour & Wagah Border - Durgiana Temple and evening ceremony. \nDay 3: Departure."
+   },
+@@ -226,6 +233,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Shantadurga Temple. A unique blend of coastal relaxation and a trail through Goa's powerful and historic temples.",
+     "destination": "Goa",
+     "duration": "6 Days",
++    "images": ["/images/packages/goa relax.webp"],
+     "price": 17999,
+     "itinerary": "Day 1: Arrival in Goa. \nDay 2: North Goa Tour. \nDay 3: Temple Visit - Shantadurga Temple. \nDay 4: South Goa Exploration. \nDay 5: Leisure Day. \nDay 6: Departure."
+   },
+@@ -235,6 +243,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Local shrine visit. An escape to the tranquil waters of Srinagar and the snow-capped heights of Gulmarg.",
+     "destination": "Srinagar & Gulmarg",
+     "duration": "5 Days",
++    "images": ["/images/packages/kashmir leisure.webp"],
+     "price": 18999,
+     "itinerary": "Day 1: Arrival in Srinagar - Houseboat and Shikara ride. \nDay 2: Local Sightseeing - Mughal Gardens and local shrine. \nDay 3: Gulmarg Excursion. \nDay 4: Leisure Day - Shopping and relaxation. \nDay 5: Departure."
+   },
+@@ -244,6 +253,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Local temples. A rejuvenating journey through the Western Ghats, featuring Ayurvedic healing and sacred temple visits.",
+     "destination": "Kochi, Munnar, Alleppey",
+     "duration": "8 Days",
++    "images": ["/images/packages/kerala hills.webp"],
+     "price": 27999,
+     "itinerary": "Day 1: Arrival in Kochi. \nDay 2: Kochi to Munnar. \nDay 3: Munnar Sightseeing. \nDay 4: Munnar to Thekkady. \nDay 5: Thekkady to Alleppey - Houseboat stay. \nDay 6: Ayurveda Experience. \nDay 7: Temple Visit & Leisure. \nDay 8: Departure."
+   },
+@@ -253,6 +263,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Meenakshi Temple. Discover the architectural marvels of the South, centered around the life-changing energy of the Meenakshi Amman Temple.",
+     "destination": "Chennai, Mahabalipuram, Madurai",
+     "duration": "7 Days",
++    "images": ["/images/packages/tamilnadu heritage.webp"],
+     "price": 22999,
+     "itinerary": "Day 1: Arrival in Chennai. \nDay 2: Chennai to Mahabalipuram - Shore temples. \nDay 3: Mahabalipuram to Madurai. \nDay 4: Meenakshi Temple Visit. \nDay 5: Local Sightseeing. \nDay 6: Return Journey / Leisure. \nDay 7: Departure."
+   },
+@@ -280,6 +291,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Jagannath Temple. Explore the 'Temple City' of Bhubaneswar and the world-famous Jagannath Temple at the sacred coast of Puri.",
+     "destination": "Bhubaneswar, Puri, Konark",
+     "duration": "6 Days",
++    "images": ["/images/packages/Odisha culture.webp"],
+     "price": 16999,
+     "itinerary": "Day 1: Arrival in Bhubaneswar - Local temple visits. \nDay 2: Bhubaneswar Sightseeing - Lingaraj Temple. \nDay 3: Bhubaneswar to Puri - Relax at the beach. \nDay 4: Jagannath Temple Visit - Darshan and exploration. \nDay 5: Konark Excursion - Visit the majestic Sun Temple. \nDay 6: Departure."
+   },
+@@ -289,6 +301,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Somnath Temple. Visit the first of the twelve Jyotirlinga shrines of Shiva, set against the waves of the Arabian Sea.",
+     "destination": "Somnath & Diu, Gujarat",
+     "duration": "5 Days",
++    "images": ["/images/packages/Gujarat Heritage.webp"],
+     "price": 14999,
+     "itinerary": "Day 1: Arrival in Somnath - Evening temple visit. \nDay 2: Somnath Darshan - Morning darshan and sightseeing. \nDay 3: Somnath to Diu - Coastal relaxation. \nDay 4: Diu Exploration - Forts and beaches. \nDay 5: Departure."
+   },
+@@ -298,6 +311,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Shirdi Sai Baba Temple. A path of devotion to Sai Baba and the sacred Trimbakeshwar, leading to the vibrant energy of Mumbai.",
+     "destination": "Shirdi, Nashik, Mumbai",
+     "duration": "6 Days",
++    "images": ["/images/packages/Maharashtra spiritual.webp"],
+     "price": 18999,
+     "itinerary": "Day 1: Arrival in Shirdi - Temple visit. \nDay 2: Shirdi Darshan - Attend morning Aarti. \nDay 3: Shirdi to Nashik - Trimbakeshwar Temple. \nDay 4: Nashik to Mumbai - City transition. \nDay 5: Mumbai Sightseeing - Gateway of India, Marine Drive. \nDay 6: Departure."
+   },
+@@ -307,6 +321,7 @@ export const packagesData = [
+     "description": "Spiritual Highlights: Akshardham, Lotus Temple. Discover the architectural wonders of modern devotion in India's historic capital.",
+     "destination": "New Delhi",
+     "duration": "4 Days",
++    "images": ["/images/packages/Drlhi City.webp"],
+     "price": 11999,
+     "itinerary": "Day 1: Arrival in Delhi - Leisure time. \nDay 2: Old Delhi Tour - Jama Masjid, Chandni Chowk. \nDay 3: New Delhi Tour - Akshardham and Lotus Temple. \nDay 4: Departure."
+   },
+
+commit cbfa233a755e02bb78fe458d3d0c337b6928c63c
+Author: Robin <robinburdewa25@gmail.com>
+Date:   Sat Apr 25 11:50:07 2026 +0530
+
+    feat: map uploaded images to specific packages
+
+diff --git a/src/lib/data.js b/src/lib/data.js
+index e39fb0f..4940a1e 100644
+--- a/src/lib/data.js
++++ b/src/lib/data.js
+@@ -7,7 +7,7 @@ export const packagesData = [
+     "destination": "Kedarnath, Uttarakhand",
+     "duration": "5 days",
+     "id": "j90tf0v4ymtj3f4",
+-    "images": ["/images/packages/kedarnath-main.webp", "/images/packages/kedarnath-temple.webp"],
++    "images": ["/images/packages/kedarnath_1920x1492_6.webp"],
+     "itinerary": "Day 1: Arrival in Rishikesh - Welcome to the yoga capital, settle into your accommodation, evening Ganga Aarti ceremony, spiritual orientation. \nDay 2: Rishikesh to Kedarnath Base - Drive through scenic Himalayan valleys, arrive at Kedarnath base camp, acclimatization and evening meditation. \nDay 3: Sacred Trek to Kedarnath Temple - Begin the spiritual trek through pine forests, witness the majestic Kedarnath Temple nestled in the mountains, perform sacred rituals and darshan, experience divine energy. \nDay 4: Meditation and Spiritual Practices - Full day of meditation, yoga, and spiritual practices at the temple, connect with the divine presence of Lord Shiva, evening reflection. \nDay 5: Return Journey - Trek back to base camp, drive to Rishikesh, reflect on your spiritual transformation, departure",
+     "price": 15999,
+     "title": "Kedarnath Divine Journey",
+@@ -21,7 +21,7 @@ export const packagesData = [
+     "destination": "Badrinath, Uttarakhand",
+     "duration": "4 days",
+     "id": "wyg6iky0ln2rb81",
+-    "images": ["/images/packages/badrinath-main.webp"],
++    "images": ["/images/packages/Badrinath_900x550_3.webp"],
+     "itinerary": "Day 1: Arrival in Haridwar - Welcome to the gateway of the gods, settle in, evening Ganga Aarti at Har Ki Pauri, spiritual immersion begins. \nDay 2: Haridwar to Badrinath - Scenic drive through Himalayan foothills, stop at Devprayag (confluence of rivers), arrive in Badrinath, evening temple visit. \nDay 3: Badrinath Darshan and Rituals - Early morning darshan at Badrinath Temple, sacred bath in Tapt Kund hot springs, perform rituals, experience the presence of Lord Vishnu, meditation. \nDay 4: Spiritual Reflection and Return - Morning meditation, visit nearby temples, begin return journey to Haridwar, carry the blessings home",
+     "price": 14999,
+     "title": "Badrinath Spiritual Sojourn",
+@@ -35,7 +35,7 @@ export const packagesData = [
+     "destination": "Varanasi, Uttar Pradesh",
+     "duration": "3 days",
+     "id": "476sc3xnoijo7lb",
+-    "images": ["/images/packages/varanasi-main.webp", "/images/packages/varanasi-aarti.webp"],
++    "images": ["/images/packages/Varanasi_1200x800_10.webp"],
+     "itinerary": "Day 1: Arrival and Ghat Exploration - Arrive in the holiest city, explore the sacred ghats of Varanasi, witness the spiritual energy of Mother Ganga, evening Aarti ceremony. \nDay 2: Aarti Ceremony and Temple Visits - Participate in the mesmerizing Ganga Aarti at Dashashwamedh Ghat, visit Kashi Vishwanath Temple, explore ancient temples, understand the spiritual significance of Varanasi. \nDay 3: Spiritual Practices and Departure - Morning yoga and meditation on the ghats, boat ride on the Ganges, final blessings, departure with spiritual awakening",
+     "price": 9999,
+     "title": "Varanasi Spiritual Awakening",
+@@ -49,7 +49,7 @@ export const packagesData = [
+     "destination": "Mathura, Uttar Pradesh",
+     "duration": "3 days",
+     "id": "phghcu8p5atfz8y",
+-    "images": ["/images/packages/mathura-main.webp"],
++    "images": ["/images/packages/mathura_916x562_7.webp"],
+     "itinerary": "Day 1: Arrival and Krishna Temple Visits - Arrive in the birthplace of Lord Krishna, visit Krishna Janmabhoomi Temple, explore the sacred sites of Krishna's childhood, evening Aarti. \nDay 2: Vrindavan Exploration - Journey to Vrindavan, visit Banke Bihari Temple and Radha Raman Temple, experience the divine love of Radha-Krishna, participate in evening Aarti, immerse in devotional atmosphere. \nDay 3: Radha Krishna Temples and Departure - Visit Govind Dev Temple and other sacred temples, participate in morning prayers, reflect on Krishna's teachings, departure with divine blessings",
+     "price": 10999,
+     "title": "Mathura Krishna Pilgrimage",
+@@ -63,7 +63,7 @@ export const packagesData = [
+     "destination": "Ayodhya, Uttar Pradesh",
+     "duration": "3 days",
+     "id": "hqz6lsprsi98gjb",
+-    "images": ["/images/packages/ayodhya-main.webp"],
++    "images": ["/images/packages/Ayodhya_1200x630_2.webp"],
+     "itinerary": "Day 1: Arrival and Ram Mandir Darshan - Arrive in Ayodhya, witness the grandeur of the newly constructed Ram Mandir, perform sacred rituals, experience the divine presence of Lord Rama. \nDay 2: Hanuman Garhi and Temple Exploration - Visit Hanuman Garhi Temple, explore Kanak Bhawan and other ancient temples, understand the significance of Ayodhya in Hindu mythology, evening prayers. \nDay 3: Spiritual Reflection and Departure - Morning meditation at Ram Mandir, participate in Aarti, carry the blessings of Lord Rama, departure with renewed faith",
+     "price": 11999,
+     "title": "Ayodhya Ram Mandir Journey",
+@@ -77,7 +77,7 @@ export const packagesData = [
+     "destination": "Amritsar, Punjab",
+     "duration": "2 days",
+     "id": "j4wqeww8k2q6wo0",
+-    "images": ["/images/packages/amritsar-main.webp"],
++    "images": ["/images/packages/amritsar_1440x960_1.webp"],
+     "itinerary": "Day 1: Arrival and Golden Temple Darshan - Arrive in Amritsar, visit the magnificent Golden Temple, experience the spiritual sanctity, participate in evening prayers, witness the divine glow of the temple. \nDay 2: Langar Experience and Departure - Participate in the sacred Langar (community meal), understand the philosophy of equality and service, visit Jallianwala Bagh, departure with blessings",
+     "price": 8999,
+     "title": "Amritsar Golden Temple Blessing",
+@@ -91,7 +91,7 @@ export const packagesData = [
+     "destination": "Haridwar, Uttarakhand",
+     "duration": "2 days",
+     "id": "uz86ucw373qqyy8",
+-    "images": ["/images/packages/haridwar-main.webp"],
++    "images": ["/images/packages/haridwar_1080x649_5.webp"],
+     "itinerary": "Day 1: Arrival and Ganga Aarti - Arrive in Haridwar, settle in, witness the mesmerizing Ganga Aarti at Har Ki Pauri, experience the divine energy of Mother Ganga, evening meditation. \nDay 2: Temple Visits and Departure - Visit Mansa Devi Temple and Chandi Devi Temple, take a dip in the sacred Ganges, participate in morning prayers, departure with spiritual blessings",
+     "price": 7999,
+     "title": "Haridwar Ganga Aarti Experience",
+@@ -105,7 +105,7 @@ export const packagesData = [
+     "destination": "Rishikesh, Uttarakhand",
+     "duration": "4 days",
+     "id": "fepczsm7x75wvt7",
+-    "images": ["/images/packages/rishikesh-main.webp"],
++    "images": ["/images/packages/rishikesh_1200x675_8.webp"],
+     "itinerary": "Day 1: Arrival and Orientation - Arrive in the yoga capital of India, settle in, evening orientation and introduction to yoga philosophy, Ganga Aarti ceremony. \nDay 2: Yoga and Meditation Sessions - Morning yoga practice, meditation sessions, learn ancient yogic techniques, evening Aarti and reflection. \nDay 3: Yoga and Spiritual Practices - Continued yoga and meditation, visit ashrams, understand the path of self-discovery, evening spiritual discourse. \nDay 4: Final Practice and Departure - Morning yoga session, meditation, carry the inner peace home, departure with spiritual transformation",
+     "price": 12999,
+     "title": "Rishikesh Yoga & Spirituality",
+@@ -119,7 +119,7 @@ export const packagesData = [
+     "destination": "Ujjain, Madhya Pradesh",
+     "duration": "3 days",
+     "id": "5chu49x7wjnutg4",
+-    "images": [],
++    "images": ["/images/packages/ujjain_1280x720_9.webp"],
+     "itinerary": "Day 1: Arrival and Mahakal Darshan - Arrive in Ujjain, visit the sacred Mahakaleshwar Temple, experience the divine presence of Lord Shiva, perform rituals, evening Aarti. \nDay 2: Hari Parbat and Temple Exploration - Visit Hari Parbat Temple, explore other sacred temples, understand the spiritual significance of Ujjain, participate in evening prayers. \nDay 3: Spiritual Reflection and Departure - Morning meditation at Mahakal Temple, participate in Aarti, carry the blessings of Lord Shiva, departure with divine grace",
+     "price": 10999,
+     "title": "Ujjain Mahakal Temple Journey",
+@@ -133,7 +133,7 @@ export const packagesData = [
+     "destination": "Dwarka, Gujarat",
+     "duration": "4 days",
+     "id": "bb9ag4mwz0ar7x8",
+-    "images": [],
++    "images": ["/images/packages/Dwarka_870x380_4.webp"],
+     "itinerary": "Day 1: Arrival and Dwarkadhish Temple - enter Krishna's kingdom. \nDay 2: Nageshwar Temple and Bet Dwarka - explore sacred islands. \nDay 3: Spiritual practices - immerse in Krishna's energy. \nDay 4: Departure - blessed by Krishna's grace.",
+     "price": 13999,
+     "title": "Dwarka Krishna's Kingdom",
+
+commit 47b6f22af2da208a528100adb3d3d7b9a64a1904
+Author: Robin <robinburdewa25@gmail.com>
+Date:   Sat Apr 25 11:37:54 2026 +0530
+
+    feat: add package image support and featured section updates
+
+diff --git a/src/lib/data.js b/src/lib/data.js
+index 4eece49..e39fb0f 100644
+--- a/src/lib/data.js
++++ b/src/lib/data.js
+@@ -7,7 +7,7 @@ export const packagesData = [
+     "destination": "Kedarnath, Uttarakhand",
+     "duration": "5 days",
+     "id": "j90tf0v4ymtj3f4",
+-    "images": [],
++    "images": ["/images/packages/kedarnath-main.webp", "/images/packages/kedarnath-temple.webp"],
+     "itinerary": "Day 1: Arrival in Rishikesh - Welcome to the yoga capital, settle into your accommodation, evening Ganga Aarti ceremony, spiritual orientation. \nDay 2: Rishikesh to Kedarnath Base - Drive through scenic Himalayan valleys, arrive at Kedarnath base camp, acclimatization and evening meditation. \nDay 3: Sacred Trek to Kedarnath Temple - Begin the spiritual trek through pine forests, witness the majestic Kedarnath Temple nestled in the mountains, perform sacred rituals and darshan, experience divine energy. \nDay 4: Meditation and Spiritual Practices - Full day of meditation, yoga, and spiritual practices at the temple, connect with the divine presence of Lord Shiva, evening reflection. \nDay 5: Return Journey - Trek back to base camp, drive to Rishikesh, reflect on your spiritual transformation, departure",
+     "price": 15999,
+     "title": "Kedarnath Divine Journey",
+@@ -21,7 +21,7 @@ export const packagesData = [
+     "destination": "Badrinath, Uttarakhand",
+     "duration": "4 days",
+     "id": "wyg6iky0ln2rb81",
+-    "images": [],
++    "images": ["/images/packages/badrinath-main.webp"],
+     "itinerary": "Day 1: Arrival in Haridwar - Welcome to the gateway of the gods, settle in, evening Ganga Aarti at Har Ki Pauri, spiritual immersion begins. \nDay 2: Haridwar to Badrinath - Scenic drive through Himalayan foothills, stop at Devprayag (confluence of rivers), arrive in Badrinath, evening temple visit. \nDay 3: Badrinath Darshan and Rituals - Early morning darshan at Badrinath Temple, sacred bath in Tapt Kund hot springs, perform rituals, experience the presence of Lord Vishnu, meditation. \nDay 4: Spiritual Reflection and Return - Morning meditation, visit nearby temples, begin return journey to Haridwar, carry the blessings home",
+     "price": 14999,
+     "title": "Badrinath Spiritual Sojourn",
+@@ -35,7 +35,7 @@ export const packagesData = [
+     "destination": "Varanasi, Uttar Pradesh",
+     "duration": "3 days",
+     "id": "476sc3xnoijo7lb",
+-    "images": [],
++    "images": ["/images/packages/varanasi-main.webp", "/images/packages/varanasi-aarti.webp"],
+     "itinerary": "Day 1: Arrival and Ghat Exploration - Arrive in the holiest city, explore the sacred ghats of Varanasi, witness the spiritual energy of Mother Ganga, evening Aarti ceremony. \nDay 2: Aarti Ceremony and Temple Visits - Participate in the mesmerizing Ganga Aarti at Dashashwamedh Ghat, visit Kashi Vishwanath Temple, explore ancient temples, understand the spiritual significance of Varanasi. \nDay 3: Spiritual Practices and Departure - Morning yoga and meditation on the ghats, boat ride on the Ganges, final blessings, departure with spiritual awakening",
+     "price": 9999,
+     "title": "Varanasi Spiritual Awakening",
+@@ -49,7 +49,7 @@ export const packagesData = [
+     "destination": "Mathura, Uttar Pradesh",
+     "duration": "3 days",
+     "id": "phghcu8p5atfz8y",
+-    "images": [],
++    "images": ["/images/packages/mathura-main.webp"],
+     "itinerary": "Day 1: Arrival and Krishna Temple Visits - Arrive in the birthplace of Lord Krishna, visit Krishna Janmabhoomi Temple, explore the sacred sites of Krishna's childhood, evening Aarti. \nDay 2: Vrindavan Exploration - Journey to Vrindavan, visit Banke Bihari Temple and Radha Raman Temple, experience the divine love of Radha-Krishna, participate in evening Aarti, immerse in devotional atmosphere. \nDay 3: Radha Krishna Temples and Departure - Visit Govind Dev Temple and other sacred temples, participate in morning prayers, reflect on Krishna's teachings, departure with divine blessings",
+     "price": 10999,
+     "title": "Mathura Krishna Pilgrimage",
+@@ -63,7 +63,7 @@ export const packagesData = [
+     "destination": "Ayodhya, Uttar Pradesh",
+     "duration": "3 days",
+     "id": "hqz6lsprsi98gjb",
+-    "images": [],
++    "images": ["/images/packages/ayodhya-main.webp"],
+     "itinerary": "Day 1: Arrival and Ram Mandir Darshan - Arrive in Ayodhya, witness the grandeur of the newly constructed Ram Mandir, perform sacred rituals, experience the divine presence of Lord Rama. \nDay 2: Hanuman Garhi and Temple Exploration - Visit Hanuman Garhi Temple, explore Kanak Bhawan and other ancient temples, understand the significance of Ayodhya in Hindu mythology, evening prayers. \nDay 3: Spiritual Reflection and Departure - Morning meditation at Ram Mandir, participate in Aarti, carry the blessings of Lord Rama, departure with renewed faith",
+     "price": 11999,
+     "title": "Ayodhya Ram Mandir Journey",
+@@ -77,7 +77,7 @@ export const packagesData = [
+     "destination": "Amritsar, Punjab",
+     "duration": "2 days",
+     "id": "j4wqeww8k2q6wo0",
+-    "images": [],
++    "images": ["/images/packages/amritsar-main.webp"],
+     "itinerary": "Day 1: Arrival and Golden Temple Darshan - Arrive in Amritsar, visit the magnificent Golden Temple, experience the spiritual sanctity, participate in evening prayers, witness the divine glow of the temple. \nDay 2: Langar Experience and Departure - Participate in the sacred Langar (community meal), understand the philosophy of equality and service, visit Jallianwala Bagh, departure with blessings",
+     "price": 8999,
+     "title": "Amritsar Golden Temple Blessing",
+@@ -91,7 +91,7 @@ export const packagesData = [
+     "destination": "Haridwar, Uttarakhand",
+     "duration": "2 days",
+     "id": "uz86ucw373qqyy8",
+-    "images": [],
++    "images": ["/images/packages/haridwar-main.webp"],
+     "itinerary": "Day 1: Arrival and Ganga Aarti - Arrive in Haridwar, settle in, witness the mesmerizing Ganga Aarti at Har Ki Pauri, experience the divine energy of Mother Ganga, evening meditation. \nDay 2: Temple Visits and Departure - Visit Mansa Devi Temple and Chandi Devi Temple, take a dip in the sacred Ganges, participate in morning prayers, departure with spiritual blessings",
+     "price": 7999,
+     "title": "Haridwar Ganga Aarti Experience",
+@@ -105,7 +105,7 @@ export const packagesData = [
+     "destination": "Rishikesh, Uttarakhand",
+     "duration": "4 days",
+     "id": "fepczsm7x75wvt7",
+-    "images": [],
++    "images": ["/images/packages/rishikesh-main.webp"],
+     "itinerary": "Day 1: Arrival and Orientation - Arrive in the yoga capital of India, settle in, evening orientation and introduction to yoga philosophy, Ganga Aarti ceremony. \nDay 2: Yoga and Meditation Sessions - Morning yoga practice, meditation sessions, learn ancient yogic techniques, evening Aarti and reflection. \nDay 3: Yoga and Spiritual Practices - Continued yoga and meditation, visit ashrams, understand the path of self-discovery, evening spiritual discourse. \nDay 4: Final Practice and Departure - Morning yoga session, meditation, carry the inner peace home, departure with spiritual transformation",
+     "price": 12999,
+     "title": "Rishikesh Yoga & Spirituality",
+
+commit ed4fc11b659cd8bebdabf9f87c90c6c1d0b948b5
+Author: Robin <robinburdewa25@gmail.com>
+Date:   Sat Apr 25 09:36:41 2026 +0530
+
+    feat: add packages data and implement PackagesPage component to display travel offerings
+
+diff --git a/src/lib/data.js b/src/lib/data.js
+index 8137055..4eece49 100644
+--- a/src/lib/data.js
++++ b/src/lib/data.js
+@@ -138,5 +138,185 @@ export const packagesData = [
+     "price": 13999,
+     "title": "Dwarka Krishna's Kingdom",
+     "updated": "2026-04-23 10:19:24.205Z"
++  },
++  {
++    "id": "shimla-manali-escape",
++    "title": "ShimlaΓÇôManali Divine Escape",
++    "description": "Spiritual Highlights: Jakhoo Temple, Hadimba Devi Temple. Experience the cool mountain air and colonial charm mixed with deep spiritual roots in the Himalayas.",
++    "destination": "Shimla & Manali, HP",
++    "duration": "6 Days",
++    "price": 18999,
++    "itinerary": "Day 1: Arrival in Shimla - Arrive and explore Mall Road. \nDay 2: Kufri & Jakhoo Temple - Visit highest altitude Hanuman temple. \nDay 3: Drive to Manali - Scenic journey through valleys. \nDay 4: Manali Sightseeing - Hadimba Devi Temple and Vashisht hot springs. \nDay 5: Solang Valley - Adventure and scenic views. \nDay 6: Departure."
++  },
++  {
++    "id": "goa-heritage-tour",
++    "title": "Goa Heritage & Spiritual Tour",
++    "description": "Spiritual Highlights: Basilica of Bom Jesus, Mangeshi Temple. Discover the UNESCO heritage sites and profound Hindu temples nestled in tropical paradise.",
++    "destination": "Goa",
++    "duration": "5 Days",
++    "price": 16999,
++    "itinerary": "Day 1: Arrival in Goa - Check-in and beach relaxation. \nDay 2: North Goa Sightseeing - Calangute, Baga, Fort Aguada. \nDay 3: Old Goa Temples - Basilica of Bom Jesus, Shri Mangeshi Temple. \nDay 4: South Goa & Leisure - Miramar Beach, Dona Paula. \nDay 5: Departure."
++  },
++  {
++    "id": "kashmir-scenic-spiritual",
++    "title": "Kashmir Scenic & Spiritual Tour",
++    "description": "Spiritual Highlights: Shankaracharya Temple, Hazratbal Shrine. Experience the profound peace and panoramic beauty of 'Heaven on Earth'.",
++    "destination": "Srinagar & Gulmarg, J&K",
++    "duration": "6 Days",
++    "price": 21999,
++    "itinerary": "Day 1: Arrival in Srinagar - Houseboat stay and Shikara ride. \nDay 2: Srinagar Sightseeing - Shankaracharya Temple, Mughal Gardens, Hazratbal Shrine. \nDay 3: Srinagar to Gulmarg - Scenic landscapes and Gondola ride. \nDay 4: Pahalgam - Betaab and Aru Valley. \nDay 5: Return to Srinagar - Shopping and leisure. \nDay 6: Departure."
++  },
++  {
++    "id": "kerala-temple-tour",
++    "title": "Kerala Backwaters + Temple Tour",
++    "description": "Spiritual Highlights: Guruvayur Temple. A perfect blend of southern coastal beauty, backwaters, and the divine grace of Lord Krishna at Guruvayur.",
++    "destination": "Kochi & Munnar, Kerala",
++    "duration": "7 Days",
++    "price": 24999,
++    "itinerary": "Day 1: Arrival in Kochi - Fort Kochi and local markets. \nDay 2: Drive to Munnar - Tea plantations and waterfalls. \nDay 3: Munnar Sightseeing - Eravikulam National Park, Tea Museum. \nDay 4: Alleppey Houseboat - Backwater cruise. \nDay 5: Guruvayur Temple - Darshan of Lord Krishna. \nDay 6: Cultural Experience - Leisure or Kathakali. \nDay 7: Departure."
++  },
++  {
++    "id": "dharamshala-spiritual",
++    "title": "Dharamshala Spiritual Hills",
++    "description": "Spiritual Highlights: Dalai Lama Temple. Find peace in the Tibetan-influenced hills of McLeodganj, surrounded by cedar forests and prayer wheels.",
++    "destination": "Dharamshala, HP",
++    "duration": "5 Days",
++    "price": 15999,
++    "itinerary": "Day 1: Arrival - Check-in and leisure. \nDay 2: McLeodganj - Dalai Lama Temple Complex and Namgyal Monastery. \nDay 3: Bhagsu Nag - Temple and waterfall visit. \nDay 4: Norbulingka Institute - Local exploration and tea gardens. \nDay 5: Departure."
++  },
++  {
++    "id": "dalhousie-khajjiar-retreat",
++    "title": "DalhousieΓÇôKhajjiar Retreat",
++    "description": "Spiritual Highlights: Chamunda Devi Temple. Explore the serene hill town and the ΓÇ£Mini Switzerland of IndiaΓÇ¥ with a visit to the sacred Chamunda Devi.",
++    "destination": "Dalhousie & Khajjiar, HP",
++    "duration": "4 Days",
++    "price": 12999,
++    "itinerary": "Day 1: Arrival in Dalhousie - Explore Subhash Chowk. \nDay 2: Local Sightseeing - Panchpula, Satdhara Falls, Chamunda Devi Temple. \nDay 3: Khajjiar Excursion - Meadows and Khajji Nag Temple. \nDay 4: Departure."
++  },
++  {
++    "id": "kasol-manikaran-bliss",
++    "title": "KasolΓÇôManikaran Bliss",
++    "description": "Spiritual Highlights: Manikaran Sahib. Enjoy the peaceful Parvati River and the healing hot springs of the famous Manikaran Sahib Gurudwara.",
++    "destination": "Kasol & Manikaran, HP",
++    "duration": "4 Days",
++    "price": 9999,
++    "itinerary": "Day 1: Arrival in Kasol - Riverside relaxation. \nDay 2: Manikaran Excursion - Hot springs and Gurudwara visit. \nDay 3: Leisure and Nature Walks - Explore nearby villages. \nDay 4: Departure."
++  },
++  {
++    "id": "himachal-grand-tour",
++    "title": "Himachal Grand Tour",
++    "description": "Spiritual Highlights: Jakhoo Temple, Hadimba Temple, Dalai Lama Temple. A comprehensive journey across the most sacred and scenic spots of Himachal Pradesh.",
++    "destination": "Shimla, Manali, Dharamshala, Dalhousie",
++    "duration": "10 Days",
++    "price": 34999,
++    "itinerary": "Day 1: Arrival in Shimla. \nDay 2: Shimla Sightseeing - Kufri and Jakhoo Temple. \nDay 3: Shimla to Manali - Scenic drive. \nDay 4: Manali Sightseeing - Hadimba and Vashisht Temple. \nDay 5: Solang Valley. \nDay 6: Manali to Dharamshala. \nDay 7: Dharamshala Sightseeing - Dalai Lama Temple. \nDay 8: Dharamshala to Dalhousie. \nDay 9: Khajjiar Excursion. \nDay 10: Departure."
++  },
++  {
++    "id": "amritsar-cultural-tour",
++    "title": "Amritsar Cultural Tour",
++    "description": "Spiritual Highlights: Durgiana Temple. Experience the deep history of Jallianwala Bagh and the spiritual vibes of the Lakshmi Narayan (Durgiana) Temple.",
++    "destination": "Amritsar, Punjab",
++    "duration": "3 Days",
++    "price": 7999,
++    "itinerary": "Day 1: Arrival in Amritsar - Visit Jallianwala Bagh. \nDay 2: City Tour & Wagah Border - Durgiana Temple and evening ceremony. \nDay 3: Departure."
++  },
++  {
++    "id": "goa-relaxation-temple-trail",
++    "title": "Goa Relaxation + Temple Trail",
++    "description": "Spiritual Highlights: Shantadurga Temple. A unique blend of coastal relaxation and a trail through Goa's powerful and historic temples.",
++    "destination": "Goa",
++    "duration": "6 Days",
++    "price": 17999,
++    "itinerary": "Day 1: Arrival in Goa. \nDay 2: North Goa Tour. \nDay 3: Temple Visit - Shantadurga Temple. \nDay 4: South Goa Exploration. \nDay 5: Leisure Day. \nDay 6: Departure."
++  },
++  {
++    "id": "kashmir-leisure-escape",
++    "title": "Kashmir Leisure Escape",
++    "description": "Spiritual Highlights: Local shrine visit. An escape to the tranquil waters of Srinagar and the snow-capped heights of Gulmarg.",
++    "destination": "Srinagar & Gulmarg",
++    "duration": "5 Days",
++    "price": 18999,
++    "itinerary": "Day 1: Arrival in Srinagar - Houseboat and Shikara ride. \nDay 2: Local Sightseeing - Mughal Gardens and local shrine. \nDay 3: Gulmarg Excursion. \nDay 4: Leisure Day - Shopping and relaxation. \nDay 5: Departure."
++  },
++  {
++    "id": "kerala-hills-healing",
++    "title": "Kerala Hills & Healing Tour",
++    "description": "Spiritual Highlights: Local temples. A rejuvenating journey through the Western Ghats, featuring Ayurvedic healing and sacred temple visits.",
++    "destination": "Kochi, Munnar, Alleppey",
++    "duration": "8 Days",
++    "price": 27999,
++    "itinerary": "Day 1: Arrival in Kochi. \nDay 2: Kochi to Munnar. \nDay 3: Munnar Sightseeing. \nDay 4: Munnar to Thekkady. \nDay 5: Thekkady to Alleppey - Houseboat stay. \nDay 6: Ayurveda Experience. \nDay 7: Temple Visit & Leisure. \nDay 8: Departure."
++  },
++  {
++    "id": "tamil-nadu-heritage",
++    "title": "Tamil Nadu Heritage Tour",
++    "description": "Spiritual Highlights: Meenakshi Temple. Discover the architectural marvels of the South, centered around the life-changing energy of the Meenakshi Amman Temple.",
++    "destination": "Chennai, Mahabalipuram, Madurai",
++    "duration": "7 Days",
++    "price": 22999,
++    "itinerary": "Day 1: Arrival in Chennai. \nDay 2: Chennai to Mahabalipuram - Shore temples. \nDay 3: Mahabalipuram to Madurai. \nDay 4: Meenakshi Temple Visit. \nDay 5: Local Sightseeing. \nDay 6: Return Journey / Leisure. \nDay 7: Departure."
++  },
++  {
++    "id": "karnataka-culture-temples",
++    "title": "Karnataka Culture & Temples",
++    "description": "Spiritual Highlights: Chamundeshwari Temple. A journey through the royal heritage of Mysore and the spiritual heights of the Chamundi Hills.",
++    "destination": "Bangalore, Mysore, Coorg",
++    "duration": "6 Days",
++    "price": 19999,
++    "itinerary": "Day 1: Arrival in Bangalore - Local sightseeing. \nDay 2: Bangalore to Mysore - Visit the grand palace. \nDay 3: Chamundi Hills - Chamundeshwari Temple visit. \nDay 4: Mysore to Coorg - Scenic drive. \nDay 5: Coorg Sightseeing - Coffee plantations and waterfalls. \nDay 6: Departure."
++  },
++  {
++    "id": "sikkim-monastery-nature",
++    "title": "Sikkim Monastery & Nature Tour",
++    "description": "Spiritual Highlights: Rumtek Monastery. Experience the serene spirituality of Tibetan Buddhism amidst the breathtaking peaks of the Eastern Himalayas.",
++    "destination": "Gangtok, Sikkim",
++    "duration": "6 Days",
++    "price": 23999,
++    "itinerary": "Day 1: Arrival in Gangtok - Leisure time. \nDay 2: Gangtok Sightseeing - Rumtek Monastery. \nDay 3: Tsomgo Lake Excursion - Visit Baba Mandir. \nDay 4: Leisure Day - Explore local markets. \nDay 5: Optional Excursion - Nearby viewpoints. \nDay 6: Departure."
++  },
++  {
++    "id": "odisha-culture-temple",
++    "title": "Odisha Culture & Temple Tour",
++    "description": "Spiritual Highlights: Jagannath Temple. Explore the 'Temple City' of Bhubaneswar and the world-famous Jagannath Temple at the sacred coast of Puri.",
++    "destination": "Bhubaneswar, Puri, Konark",
++    "duration": "6 Days",
++    "price": 16999,
++    "itinerary": "Day 1: Arrival in Bhubaneswar - Local temple visits. \nDay 2: Bhubaneswar Sightseeing - Lingaraj Temple. \nDay 3: Bhubaneswar to Puri - Relax at the beach. \nDay 4: Jagannath Temple Visit - Darshan and exploration. \nDay 5: Konark Excursion - Visit the majestic Sun Temple. \nDay 6: Departure."
++  },
++  {
++    "id": "gujarat-heritage-somnath",
++    "title": "Gujarat Heritage Tour",
++    "description": "Spiritual Highlights: Somnath Temple. Visit the first of the twelve Jyotirlinga shrines of Shiva, set against the waves of the Arabian Sea.",
++    "destination": "Somnath & Diu, Gujarat",
++    "duration": "5 Days",
++    "price": 14999,
++    "itinerary": "Day 1: Arrival in Somnath - Evening temple visit. \nDay 2: Somnath Darshan - Morning darshan and sightseeing. \nDay 3: Somnath to Diu - Coastal relaxation. \nDay 4: Diu Exploration - Forts and beaches. \nDay 5: Departure."
++  },
++  {
++    "id": "maharashtra-spiritual-city",
++    "title": "Maharashtra Spiritual + City Tour",
++    "description": "Spiritual Highlights: Shirdi Sai Baba Temple. A path of devotion to Sai Baba and the sacred Trimbakeshwar, leading to the vibrant energy of Mumbai.",
++    "destination": "Shirdi, Nashik, Mumbai",
++    "duration": "6 Days",
++    "price": 18999,
++    "itinerary": "Day 1: Arrival in Shirdi - Temple visit. \nDay 2: Shirdi Darshan - Attend morning Aarti. \nDay 3: Shirdi to Nashik - Trimbakeshwar Temple. \nDay 4: Nashik to Mumbai - City transition. \nDay 5: Mumbai Sightseeing - Gateway of India, Marine Drive. \nDay 6: Departure."
++  },
++  {
++    "id": "delhi-city-faith",
++    "title": "Delhi City & Faith Tour",
++    "description": "Spiritual Highlights: Akshardham, Lotus Temple. Discover the architectural wonders of modern devotion in India's historic capital.",
++    "destination": "New Delhi",
++    "duration": "4 Days",
++    "price": 11999,
++    "itinerary": "Day 1: Arrival in Delhi - Leisure time. \nDay 2: Old Delhi Tour - Jama Masjid, Chandni Chowk. \nDay 3: New Delhi Tour - Akshardham and Lotus Temple. \nDay 4: Departure."
++  },
++  {
++    "id": "uttarakhand-nature-temples-almora",
++    "title": "Uttarakhand Nature + Temples",
++    "description": "Spiritual Highlights: Jageshwar Temples. Retreat into the ancient cedar forests of Almora to find the cluster of 124 stone temples of Jageshwar.",
++    "destination": "Almora, Uttarakhand",
++    "duration": "6 Days",
++    "price": 15999,
++    "itinerary": "Day 1: Arrival in Almora - Relaxation. \nDay 2: Almora Sightseeing - Viewpoints and markets. \nDay 3: Jageshwar Visit - Ancient temple complex darshan. \nDay 4: Nature Exploration - Short hikes. \nDay 5: Leisure Day - Local experiences. \nDay 6: Departure."
+   }
+ ];
+
+commit bfb25d150c7be6841dc0af78f06a53cfcb21dcf3
+Author: Robin <robinburdewa25@gmail.com>
+Date:   Sat Apr 25 08:51:29 2026 +0530
+
+    Deploy Shakti Holyday
+
+diff --git a/src/lib/data.js b/src/lib/data.js
+new file mode 100644
+index 0000000..8137055
+--- /dev/null
++++ b/src/lib/data.js
+@@ -0,0 +1,142 @@
++export const packagesData = [
++  {
++    "collectionId": "pbc_9492306209",
++    "collectionName": "packages",
++    "created": "2026-04-23 10:19:24.204Z",
++    "description": "Journey to the sacred abode of Lord Shiva in the Himalayas. Experience the divine energy of one of the twelve Jyotirlingas. This pilgrimage is a transformative journey through snow-capped peaks and spiritual awakening.",
++    "destination": "Kedarnath, Uttarakhand",
++    "duration": "5 days",
++    "id": "j90tf0v4ymtj3f4",
++    "images": [],
++    "itinerary": "Day 1: Arrival in Rishikesh - Welcome to the yoga capital, settle into your accommodation, evening Ganga Aarti ceremony, spiritual orientation. \nDay 2: Rishikesh to Kedarnath Base - Drive through scenic Himalayan valleys, arrive at Kedarnath base camp, acclimatization and evening meditation. \nDay 3: Sacred Trek to Kedarnath Temple - Begin the spiritual trek through pine forests, witness the majestic Kedarnath Temple nestled in the mountains, perform sacred rituals and darshan, experience divine energy. \nDay 4: Meditation and Spiritual Practices - Full day of meditation, yoga, and spiritual practices at the temple, connect with the divine presence of Lord Shiva, evening reflection. \nDay 5: Return Journey - Trek back to base camp, drive to Rishikesh, reflect on your spiritual transformation, departure",
++    "price": 15999,
++    "title": "Kedarnath Divine Journey",
++    "updated": "2026-04-23 12:05:35.318Z"
++  },
++  {
++    "collectionId": "pbc_9492306209",
++    "collectionName": "packages",
++    "created": "2026-04-23 10:19:24.204Z",
++    "description": "Visit the sacred temple of Lord Vishnu nestled in the Himalayas. Badrinath is one of the four sacred Dhams, representing the ultimate destination of spiritual seekers. Immerse yourself in devotion and divine grace.",
++    "destination": "Badrinath, Uttarakhand",
++    "duration": "4 days",
++    "id": "wyg6iky0ln2rb81",
++    "images": [],
++    "itinerary": "Day 1: Arrival in Haridwar - Welcome to the gateway of the gods, settle in, evening Ganga Aarti at Har Ki Pauri, spiritual immersion begins. \nDay 2: Haridwar to Badrinath - Scenic drive through Himalayan foothills, stop at Devprayag (confluence of rivers), arrive in Badrinath, evening temple visit. \nDay 3: Badrinath Darshan and Rituals - Early morning darshan at Badrinath Temple, sacred bath in Tapt Kund hot springs, perform rituals, experience the presence of Lord Vishnu, meditation. \nDay 4: Spiritual Reflection and Return - Morning meditation, visit nearby temples, begin return journey to Haridwar, carry the blessings home",
++    "price": 14999,
++    "title": "Badrinath Spiritual Sojourn",
++    "updated": "2026-04-23 12:05:35.318Z"
++  },
++  {
++    "collectionId": "pbc_9492306209",
++    "collectionName": "packages",
++    "created": "2026-04-23 10:19:24.204Z",
++    "description": "Experience the divine energy of the holiest city on the banks of the Ganges. Varanasi is where the eternal and mortal worlds meet. Witness the sacred rituals and spiritual transformation that have captivated pilgrims for millennia.",
++    "destination": "Varanasi, Uttar Pradesh",
++    "duration": "3 days",
++    "id": "476sc3xnoijo7lb",
++    "images": [],
++    "itinerary": "Day 1: Arrival and Ghat Exploration - Arrive in the holiest city, explore the sacred ghats of Varanasi, witness the spiritual energy of Mother Ganga, evening Aarti ceremony. \nDay 2: Aarti Ceremony and Temple Visits - Participate in the mesmerizing Ganga Aarti at Dashashwamedh Ghat, visit Kashi Vishwanath Temple, explore ancient temples, understand the spiritual significance of Varanasi. \nDay 3: Spiritual Practices and Departure - Morning yoga and meditation on the ghats, boat ride on the Ganges, final blessings, departure with spiritual awakening",
++    "price": 9999,
++    "title": "Varanasi Spiritual Awakening",
++    "updated": "2026-04-23 12:05:35.319Z"
++  },
++  {
++    "collectionId": "pbc_9492306209",
++    "collectionName": "packages",
++    "created": "2026-04-23 10:19:24.204Z",
++    "description": "Walk in the footsteps of Lord Krishna in his birthplace. Mathura is the land of divine love and devotion. Experience the playful energy of Krishna and the eternal love of Radha-Krishna.",
++    "destination": "Mathura, Uttar Pradesh",
++    "duration": "3 days",
++    "id": "phghcu8p5atfz8y",
++    "images": [],
++    "itinerary": "Day 1: Arrival and Krishna Temple Visits - Arrive in the birthplace of Lord Krishna, visit Krishna Janmabhoomi Temple, explore the sacred sites of Krishna's childhood, evening Aarti. \nDay 2: Vrindavan Exploration - Journey to Vrindavan, visit Banke Bihari Temple and Radha Raman Temple, experience the divine love of Radha-Krishna, participate in evening Aarti, immerse in devotional atmosphere. \nDay 3: Radha Krishna Temples and Departure - Visit Govind Dev Temple and other sacred temples, participate in morning prayers, reflect on Krishna's teachings, departure with divine blessings",
++    "price": 10999,
++    "title": "Mathura Krishna Pilgrimage",
++    "updated": "2026-04-23 12:05:35.319Z"
++  },
++  {
++    "collectionId": "pbc_9492306209",
++    "collectionName": "packages",
++    "created": "2026-04-23 10:19:24.204Z",
++    "description": "Witness the grandeur of the newly constructed Ram Mandir. Ayodhya is the birthplace of Lord Rama, the embodiment of dharma and righteousness. This pilgrimage celebrates the triumph of good over evil.",
++    "destination": "Ayodhya, Uttar Pradesh",
++    "duration": "3 days",
++    "id": "hqz6lsprsi98gjb",
++    "images": [],
++    "itinerary": "Day 1: Arrival and Ram Mandir Darshan - Arrive in Ayodhya, witness the grandeur of the newly constructed Ram Mandir, perform sacred rituals, experience the divine presence of Lord Rama. \nDay 2: Hanuman Garhi and Temple Exploration - Visit Hanuman Garhi Temple, explore Kanak Bhawan and other ancient temples, understand the significance of Ayodhya in Hindu mythology, evening prayers. \nDay 3: Spiritual Reflection and Departure - Morning meditation at Ram Mandir, participate in Aarti, carry the blessings of Lord Rama, departure with renewed faith",
++    "price": 11999,
++    "title": "Ayodhya Ram Mandir Journey",
++    "updated": "2026-04-23 12:05:35.319Z"
++  },
++  {
++    "collectionId": "pbc_9492306209",
++    "collectionName": "packages",
++    "created": "2026-04-23 10:19:24.204Z",
++    "description": "Experience the spiritual sanctity of the Golden Temple. The Golden Temple is a beacon of hope, equality, and divine grace. Immerse yourself in the Sikh tradition of service and devotion.",
++    "destination": "Amritsar, Punjab",
++    "duration": "2 days",
++    "id": "j4wqeww8k2q6wo0",
++    "images": [],
++    "itinerary": "Day 1: Arrival and Golden Temple Darshan - Arrive in Amritsar, visit the magnificent Golden Temple, experience the spiritual sanctity, participate in evening prayers, witness the divine glow of the temple. \nDay 2: Langar Experience and Departure - Participate in the sacred Langar (community meal), understand the philosophy of equality and service, visit Jallianwala Bagh, departure with blessings",
++    "price": 8999,
++    "title": "Amritsar Golden Temple Blessing",
++    "updated": "2026-04-23 12:05:35.320Z"
++  },
++  {
++    "collectionId": "pbc_9492306209",
++    "collectionName": "packages",
++    "created": "2026-04-23 10:19:24.204Z",
++    "description": "Immerse yourself in the divine rituals on the banks of Mother Ganga. Haridwar is the gateway to the gods and the place where the Ganges descends to the plains. Witness the mesmerizing Ganga Aarti.",
++    "destination": "Haridwar, Uttarakhand",
++    "duration": "2 days",
++    "id": "uz86ucw373qqyy8",
++    "images": [],
++    "itinerary": "Day 1: Arrival and Ganga Aarti - Arrive in Haridwar, settle in, witness the mesmerizing Ganga Aarti at Har Ki Pauri, experience the divine energy of Mother Ganga, evening meditation. \nDay 2: Temple Visits and Departure - Visit Mansa Devi Temple and Chandi Devi Temple, take a dip in the sacred Ganges, participate in morning prayers, departure with spiritual blessings",
++    "price": 7999,
++    "title": "Haridwar Ganga Aarti Experience",
++    "updated": "2026-04-23 12:05:35.320Z"
++  },
++  {
++    "collectionId": "pbc_9492306209",
++    "collectionName": "packages",
++    "created": "2026-04-23 10:19:24.204Z",
++    "description": "Discover inner peace through yoga and meditation in the yoga capital of India. Rishikesh is where ancient wisdom meets modern wellness. Transform your body, mind, and spirit.",
++    "destination": "Rishikesh, Uttarakhand",
++    "duration": "4 days",
++    "id": "fepczsm7x75wvt7",
++    "images": [],
++    "itinerary": "Day 1: Arrival and Orientation - Arrive in the yoga capital of India, settle in, evening orientation and introduction to yoga philosophy, Ganga Aarti ceremony. \nDay 2: Yoga and Meditation Sessions - Morning yoga practice, meditation sessions, learn ancient yogic techniques, evening Aarti and reflection. \nDay 3: Yoga and Spiritual Practices - Continued yoga and meditation, visit ashrams, understand the path of self-discovery, evening spiritual discourse. \nDay 4: Final Practice and Departure - Morning yoga session, meditation, carry the inner peace home, departure with spiritual transformation",
++    "price": 12999,
++    "title": "Rishikesh Yoga & Spirituality",
++    "updated": "2026-04-23 12:05:35.320Z"
++  },
++  {
++    "collectionId": "pbc_9492306209",
++    "collectionName": "packages",
++    "created": "2026-04-23 10:19:24.204Z",
++    "description": "Seek blessings at the sacred Mahakaleshwar Temple. Ujjain is one of the four sacred Dhams and home to the Kumbh Mela. Experience the mystical power of Lord Shiva.",
++    "destination": "Ujjain, Madhya Pradesh",
++    "duration": "3 days",
++    "id": "5chu49x7wjnutg4",
++    "images": [],
++    "itinerary": "Day 1: Arrival and Mahakal Darshan - Arrive in Ujjain, visit the sacred Mahakaleshwar Temple, experience the divine presence of Lord Shiva, perform rituals, evening Aarti. \nDay 2: Hari Parbat and Temple Exploration - Visit Hari Parbat Temple, explore other sacred temples, understand the spiritual significance of Ujjain, participate in evening prayers. \nDay 3: Spiritual Reflection and Departure - Morning meditation at Mahakal Temple, participate in Aarti, carry the blessings of Lord Shiva, departure with divine grace",
++    "price": 10999,
++    "title": "Ujjain Mahakal Temple Journey",
++    "updated": "2026-04-23 12:05:35.321Z"
++  },
++  {
++    "collectionId": "pbc_9492306209",
++    "collectionName": "packages",
++    "created": "2026-04-23 10:19:24.205Z",
++    "description": "Visit the legendary kingdom of Lord Krishna at the western edge of India. Dwarka is where Krishna established his divine kingdom. Experience the eternal love and divine play of Krishna.",
++    "destination": "Dwarka, Gujarat",
++    "duration": "4 days",
++    "id": "bb9ag4mwz0ar7x8",
++    "images": [],
++    "itinerary": "Day 1: Arrival and Dwarkadhish Temple - enter Krishna's kingdom. \nDay 2: Nageshwar Temple and Bet Dwarka - explore sacred islands. \nDay 3: Spiritual practices - immerse in Krishna's energy. \nDay 4: Departure - blessed by Krishna's grace.",
++    "price": 13999,
++    "title": "Dwarka Krishna's Kingdom",
++    "updated": "2026-04-23 10:19:24.205Z"
++  }
++];
