@@ -15,7 +15,7 @@ const PayUsPage = () => {
     ifscCode: 'IDFB0021352',
     swiftCode: 'IDBF IN BB MUM',
     branch: 'Panchkula, Sector 20',
-    upiId: ''
+    upiId: 'pragshaktiholiday11@idfcbank'
   });
   const [isLoading, setIsLoading] = useState(true);
   const [qrCodeImage, setQrCodeImage] = useState('/images/packages/Shakti Payment QR.jpeg');
