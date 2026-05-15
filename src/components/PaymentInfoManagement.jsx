@@ -8,7 +8,11 @@ import pb from '@/lib/pocketbaseClient';
 const PaymentInfoManagement = () => {
   const [bankDetails, setBankDetails] = useState({
     bankName: '',
-    accountName: '',
+    companyName: '',
+    accountNumber: '',
+    ifscCode: '',
+    swiftCode: '',
+    branch: '',
     upiId: ''
   });
   const [qrCodeImage, setQrCodeImage] = useState(null);
@@ -137,15 +141,71 @@ const PaymentInfoManagement = () => {
             
             <div className="space-y-2">
               <label className="text-sm font-medium flex items-center gap-2">
-                <User size={16} className="text-primary" /> Account Holder Name
+                <User size={16} className="text-primary" /> Company Name
               </label>
               <input 
                 type="text" 
-                name="accountName"
-                value={bankDetails.accountName} 
+                name="companyName"
+                value={bankDetails.companyName} 
                 onChange={handleChange}
                 className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                placeholder="e.g. Shakti HolyDay"
+                placeholder="e.g. Pragshakti Holidaytime OPC Private Limited"
+              />
+            </div>
+            
+            <div className="space-y-2">
+              <label className="text-sm font-medium flex items-center gap-2">
+                <CreditCard size={16} className="text-primary" /> Account Number
+              </label>
+              <input 
+                type="text" 
+                name="accountNumber"
+                value={bankDetails.accountNumber} 
+                onChange={handleChange}
+                className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                placeholder="Account Number"
+              />
+            </div>
+            
+            <div className="space-y-2">
+              <label className="text-sm font-medium flex items-center gap-2">
+                <Hash size={16} className="text-primary" /> IFSC Code
+              </label>
+              <input 
+                type="text" 
+                name="ifscCode"
+                value={bankDetails.ifscCode} 
+                onChange={handleChange}
+                className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                placeholder="e.g. IDFB0021352"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <label className="text-sm font-medium flex items-center gap-2">
+                <CreditCard size={16} className="text-primary" /> Swift Code
+              </label>
+              <input 
+                type="text" 
+                name="swiftCode"
+                value={bankDetails.swiftCode} 
+                onChange={handleChange}
+                className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                placeholder="e.g. IDBF IN BB MUM"
+              />
+            </div>
+
+            <div className="space-y-2">
+              <label className="text-sm font-medium flex items-center gap-2">
+                <Building2 size={16} className="text-primary" /> Branch
+              </label>
+              <input 
+                type="text" 
+                name="branch"
+                value={bankDetails.branch} 
+                onChange={handleChange}
+                className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                placeholder="e.g. Panchkula, Sector 20"
               />
             </div>
             

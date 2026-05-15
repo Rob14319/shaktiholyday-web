@@ -10,7 +10,11 @@ import pb from '@/lib/pocketbaseClient';
 const PayUsPage = () => {
   const [bankDetails, setBankDetails] = useState({
     bankName: 'IDFC Bank',
-    accountName: 'Pragshakti Holidaytime OPC Private Limited',
+    companyName: 'Pragshakti Holidaytime OPC Private Limited',
+    accountNumber: '89815649448',
+    ifscCode: 'IDFB0021352',
+    swiftCode: 'IDBF IN BB MUM',
+    branch: 'Panchkula, Sector 20',
     upiId: ''
   });
   const [isLoading, setIsLoading] = useState(true);
@@ -130,14 +134,82 @@ const PayUsPage = () => {
                     <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-lg hover:bg-muted/50 transition-colors">
                       <div className="flex items-center gap-3 text-muted-foreground">
                         <User size={18} className="text-primary/70" />
-                        <span className="font-medium">Account Name</span>
+                        <span className="font-medium">Company Name</span>
                       </div>
                       <div className="flex items-center gap-3">
                         <span className="font-semibold text-foreground text-right">
-                          {bankDetails.accountName || 'Not available'}
+                          {bankDetails.companyName || 'Not available'}
                         </span>
-                        {bankDetails.accountName && (
-                          <button onClick={() => handleCopy(bankDetails.accountName, 'Account Name')} className="text-muted-foreground hover:text-primary transition-colors">
+                        {bankDetails.companyName && (
+                          <button onClick={() => handleCopy(bankDetails.companyName, 'Company Name')} className="text-muted-foreground hover:text-primary transition-colors">
+                            <Copy size={16} />
+                          </button>
+                        )}
+                      </div>
+                    </li>
+
+                    <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                      <div className="flex items-center gap-3 text-muted-foreground">
+                        <CreditCard size={18} className="text-primary/70" />
+                        <span className="font-medium">Account Number</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="font-semibold text-foreground tracking-wider text-right">
+                          {bankDetails.accountNumber || 'Not available'}
+                        </span>
+                        {bankDetails.accountNumber && (
+                          <button onClick={() => handleCopy(bankDetails.accountNumber, 'Account Number')} className="text-muted-foreground hover:text-primary transition-colors">
+                            <Copy size={16} />
+                          </button>
+                        )}
+                      </div>
+                    </li>
+
+                    <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                      <div className="flex items-center gap-3 text-muted-foreground">
+                        <Hash size={18} className="text-primary/70" />
+                        <span className="font-medium">IFSC Code</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="font-semibold text-foreground tracking-wider text-right">
+                          {bankDetails.ifscCode || 'Not available'}
+                        </span>
+                        {bankDetails.ifscCode && (
+                          <button onClick={() => handleCopy(bankDetails.ifscCode, 'IFSC Code')} className="text-muted-foreground hover:text-primary transition-colors">
+                            <Copy size={16} />
+                          </button>
+                        )}
+                      </div>
+                    </li>
+
+                    <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                      <div className="flex items-center gap-3 text-muted-foreground">
+                        <CreditCard size={18} className="text-primary/70" />
+                        <span className="font-medium">Swift Code</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="font-semibold text-foreground tracking-wider text-right">
+                          {bankDetails.swiftCode || 'Not available'}
+                        </span>
+                        {bankDetails.swiftCode && (
+                          <button onClick={() => handleCopy(bankDetails.swiftCode, 'Swift Code')} className="text-muted-foreground hover:text-primary transition-colors">
+                            <Copy size={16} />
+                          </button>
+                        )}
+                      </div>
+                    </li>
+
+                    <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                      <div className="flex items-center gap-3 text-muted-foreground">
+                        <Building2 size={18} className="text-primary/70" />
+                        <span className="font-medium">Branch</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="font-semibold text-foreground text-right">
+                          {bankDetails.branch || 'Not available'}
+                        </span>
+                        {bankDetails.branch && (
+                          <button onClick={() => handleCopy(bankDetails.branch, 'Branch')} className="text-muted-foreground hover:text-primary transition-colors">
                             <Copy size={16} />
                           </button>
                         )}
