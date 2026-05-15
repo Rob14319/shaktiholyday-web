@@ -9,13 +9,14 @@ import pb from '@/lib/pocketbaseClient';
 
 const PayUsPage = () => {
   const [bankDetails, setBankDetails] = useState({
-    bankName: '',
-    accountName: '',
-    accountNumber: '',
-    ifscCode: '',
-    upiId: ''
+    bankName: 'State Bank of India',
+    accountName: 'Shakti HolyDay',
+    accountNumber: '392401501234',
+    ifscCode: 'SBIN0001234',
+    upiId: 'shaktiholyday@okaxis'
   });
   const [isLoading, setIsLoading] = useState(true);
+  const [qrCodeImage, setQrCodeImage] = useState('/images/packages/Shakti Payment QR.jpeg');
 
   useEffect(() => {
     const fetchPaymentInfo = async () => {
@@ -83,14 +84,14 @@ const PayUsPage = () => {
 
         <main className="flex-grow py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            {isLoading ? (
-              <div className="flex flex-col items-center justify-center py-20">
-                <Loader2 className="w-12 h-12 animate-spin text-primary mb-4" />
-                <p className="text-muted-foreground animate-pulse">Loading secure payment details...</p>
+            {isLoading && (
+              <div className="fixed top-20 right-4 z-50 bg-background/80 backdrop-blur-sm border border-border p-2 rounded-full shadow-lg flex items-center gap-2">
+                <Loader2 className="w-4 h-4 animate-spin text-primary" />
+                <span className="text-xs font-medium">Updating...</span>
               </div>
-            ) : (
-              <>
-                <div className="text-center mb-12">
+            )}
+            
+            <div className="text-center mb-12">
                   <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">
                     Secure Payment
                   </h1>
@@ -237,9 +238,6 @@ const PayUsPage = () => {
                 <img src="/images/packages/UPI-Logo.webp" alt="UPI" className="h-10 object-contain hover:scale-110 transition-transform duration-300" />
               </div>
             </div>
-
-              </>
-            )}
           </div>
         </main>
 
