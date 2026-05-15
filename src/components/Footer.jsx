@@ -146,8 +146,8 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-background/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-background/60">
-              © {new Date().getFullYear()} ShaktiHolyday. All rights reserved.
+            <p className="text-sm text-background/60 text-center md:text-left">
+              © {new Date().getFullYear()} ShaktiHolyday. All rights reserved. <span className="hidden md:inline">|</span><br className="md:hidden" /> A child company of OPC Private Limited.
             </p>
             <div className="flex gap-6">
               <Link to="/privacy" className="text-sm text-background/60 hover:text-primary transition-colors duration-200">

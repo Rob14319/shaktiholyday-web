@@ -104,6 +104,12 @@ const Header = () => {
                 +91 9815649468
               </a>
               
+              <Link to="/pay-us" className="ml-2">
+                <Button variant="default" size="sm" className="rounded-full px-6 bg-gradient-to-r from-[#fb923c] to-primary hover:opacity-90 transition-opacity">
+                  Pay Us
+                </Button>
+              </Link>
+              
               {/* Only show Dashboard/Logout if admin is logged in. No login button for public. */}
               {isAuthenticated && (
                 <>
@@ -183,6 +189,14 @@ const Header = () => {
                 <Phone size={18} className="mr-3 text-primary" />
                 Call: +91 9815649468
               </a>
+              
+              <div className="px-4 py-2">
+                <Link to="/pay-us" onClick={() => setMobileMenuOpen(false)}>
+                  <Button variant="default" className="w-full rounded-full bg-gradient-to-r from-[#fb923c] to-primary hover:opacity-90 transition-opacity">
+                    Pay Us
+                  </Button>
+                </Link>
+              </div>
               
               {isAuthenticated && (
                 <div className="px-4 pt-2 flex flex-col gap-2">

@@ -1,5 +1,25 @@
 export const packagesData = [
   {
+    "id": "char-dham-yatra",
+    "title": "Char Dham Yatra",
+    "description": "A life-transforming pilgrimage to the four sacred shrines: Yamunotri, Gangotri, Kedarnath, and Badrinath.",
+    "destination": "Uttarakhand",
+    "duration": "12 Days",
+    "images": ["/images/packages/kedarnath_1920x1492_6.webp"],
+    "price": 35999,
+    "itinerary": "Day 1: Arrival in Haridwar. \nDay 2: Haridwar to Barkot. \nDay 3: Yamunotri Darshan. \nDay 4: Barkot to Uttarkashi. \nDay 5: Gangotri Darshan. \nDay 6: Uttarkashi to Guptkashi. \nDay 7: Guptkashi to Kedarnath. \nDay 8: Kedarnath to Guptkashi. \nDay 9: Guptkashi to Badrinath. \nDay 10: Badrinath Darshan. \nDay 11: Badrinath to Rishikesh. \nDay 12: Departure."
+  },
+  {
+    "id": "do-dham-yatra",
+    "title": "Do Dham Yatra",
+    "description": "A spiritual pilgrimage to two sacred Dhams, Kedarnath and Badrinath, for ultimate peace.",
+    "destination": "Kedarnath & Badrinath, Uttarakhand",
+    "duration": "7 Days",
+    "images": ["/images/packages/do_dham.webp"],
+    "price": 25999,
+    "itinerary": "Day 1: Arrival in Haridwar. \nDay 2: Haridwar to Guptkashi. \nDay 3: Guptkashi to Kedarnath and Darshan. \nDay 4: Kedarnath to Guptkashi. \nDay 5: Guptkashi to Badrinath and Darshan. \nDay 6: Badrinath to Rishikesh. \nDay 7: Departure from Rishikesh."
+  },
+  {
     "collectionId": "pbc_9492306209",
     "collectionName": "packages",
     "created": "2026-04-23 10:19:24.204Z",
@@ -375,16 +395,7 @@ export const packagesData = [
     "price": 16999,
     "itinerary": "Day 1: Arrival in Haridwar/Rishikesh. \nDay 2: Drive to the Base Camp. \nDay 3: Trek/Drive to the Shrine and Darshan. \nDay 4: Return to Base Camp and Drive to Haridwar. \nDay 5: Departure from Haridwar/Rishikesh."
   },
-  {
-    "id": "do-dham-yatra",
-    "title": "Do Dham Yatra",
-    "description": "A spiritual pilgrimage to two sacred Dhams, Kedarnath and Badrinath, for ultimate peace.",
-    "destination": "Kedarnath & Badrinath, Uttarakhand",
-    "duration": "7 Days",
-    "images": ["/images/packages/do_dham.webp"],
-    "price": 25999,
-    "itinerary": "Day 1: Arrival in Haridwar. \nDay 2: Haridwar to Guptkashi. \nDay 3: Guptkashi to Kedarnath and Darshan. \nDay 4: Kedarnath to Guptkashi. \nDay 5: Guptkashi to Badrinath and Darshan. \nDay 6: Badrinath to Rishikesh. \nDay 7: Departure from Rishikesh."
-  },
+
   {
     "id": "panch-kedar-yatra",
     "title": "Panch Kedar Yatra",

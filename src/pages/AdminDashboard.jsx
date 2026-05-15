@@ -10,6 +10,7 @@ import PackagesManagement from '@/components/PackagesManagement.jsx';
 import BlogsManagement from '@/components/BlogsManagement.jsx';
 import TestimonialsManagement from '@/components/TestimonialsManagement.jsx';
 import InquiriesManagement from '@/components/InquiriesManagement.jsx';
+import PaymentInfoManagement from '@/components/PaymentInfoManagement.jsx';
 import pb from '@/lib/pocketbaseClient';
 
 const AdminDashboard = () => {
@@ -100,11 +101,12 @@ const AdminDashboard = () => {
             </div>
 
             <Tabs defaultValue="inquiries" className="space-y-6">
-              <TabsList className="grid w-full md:w-auto grid-cols-2 lg:grid-cols-4">
+              <TabsList className="flex flex-wrap gap-2 w-full md:w-auto">
                 <TabsTrigger value="inquiries">Inquiries</TabsTrigger>
                 <TabsTrigger value="packages">Packages</TabsTrigger>
                 <TabsTrigger value="blogs">Blogs</TabsTrigger>
                 <TabsTrigger value="testimonials">Testimonials</TabsTrigger>
+                <TabsTrigger value="payment-info">Payment Info</TabsTrigger>
               </TabsList>
               
               <TabsContent value="inquiries" className="mt-6">
@@ -121,6 +123,10 @@ const AdminDashboard = () => {
 
               <TabsContent value="testimonials" className="mt-6">
                 <TestimonialsManagement />
+              </TabsContent>
+
+              <TabsContent value="payment-info" className="mt-6">
+                <PaymentInfoManagement />
               </TabsContent>
             </Tabs>
           </div>

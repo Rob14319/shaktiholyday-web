@@ -75,7 +75,7 @@ const AboutUsPage = () => {
                     A pilgrimage is not merely a vacation; it is a sacred passage. Our mission is to handle all earthly logistics—transportation, accommodation, and guidance—so our pilgrims can focus entirely on their inner journey and divine connection.
                   </p>
                   <p className="text-lg text-muted-foreground leading-relaxed">
-                    We believe that reaching the holy shrines of India should be a seamless experience, accessible to seekers from all walks of life, regardless of age or physical limitation.
+                    We believe that reaching the holy shrines of India should be a seamless experience, accessible to seekers from all walks of life, regardless of age or physical limitation. As a proud child company of OPC Private Limited, we bring corporate reliability and structure to your sacred journeys.
                   </p>
                 </motion.div>
               </div>

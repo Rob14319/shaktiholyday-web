@@ -14,6 +14,7 @@ import LoginPage from './pages/LoginPage.jsx';
 import AdminDashboard from './pages/AdminDashboard.jsx';
 import AboutUsPage from './pages/AboutUsPage.jsx';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage.jsx';
+import PayUsPage from './pages/PayUsPage.jsx';
 import CustomizedInquiryModal from './components/CustomizedInquiryModal.jsx';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:id" element={<BlogPostPage />} />
           <Route path="/privacy" element={<PrivacyPolicyPage />} />
+          <Route path="/pay-us" element={<PayUsPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route 
             path="/admin" 
