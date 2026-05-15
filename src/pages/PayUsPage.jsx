@@ -9,7 +9,8 @@ import pb from '@/lib/pocketbaseClient';
 
 const PayUsPage = () => {
   const [bankDetails, setBankDetails] = useState({
-    accountName: '',
+    bankName: 'IDFC Bank',
+    accountName: 'Pragshakti Holidaytime OPC Private Limited',
     upiId: ''
   });
   const [isLoading, setIsLoading] = useState(true);
@@ -107,6 +108,22 @@ const PayUsPage = () => {
                 </div>
                 <CardContent className="p-6">
                   <ul className="space-y-6">
+                    <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-lg hover:bg-muted/50 transition-colors">
+                      <div className="flex items-center gap-3 text-muted-foreground">
+                        <Building2 size={18} className="text-primary/70" />
+                        <span className="font-medium">Bank Name</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="font-semibold text-foreground text-right">
+                          {bankDetails.bankName || 'Not available'}
+                        </span>
+                        {bankDetails.bankName && (
+                          <button onClick={() => handleCopy(bankDetails.bankName, 'Bank Name')} className="text-muted-foreground hover:text-primary transition-colors">
+                            <Copy size={16} />
+                          </button>
+                        )}
+                      </div>
+                    </li>
 
 
                     <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-lg hover:bg-muted/50 transition-colors">

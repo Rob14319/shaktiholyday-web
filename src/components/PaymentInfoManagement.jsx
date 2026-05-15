@@ -7,6 +7,7 @@ import pb from '@/lib/pocketbaseClient';
 
 const PaymentInfoManagement = () => {
   const [bankDetails, setBankDetails] = useState({
+    bankName: '',
     accountName: '',
     upiId: ''
   });
@@ -120,7 +121,19 @@ const PaymentInfoManagement = () => {
       <CardContent>
         <div className="space-y-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
+            <div className="space-y-2">
+              <label className="text-sm font-medium flex items-center gap-2">
+                <Building2 size={16} className="text-primary" /> Bank Name
+              </label>
+              <input 
+                type="text" 
+                name="bankName"
+                value={bankDetails.bankName} 
+                onChange={handleChange}
+                className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:ring-2 focus:ring-primary/20 outline-none transition-all"
+                placeholder="e.g. IDFC Bank"
+              />
+            </div>
             
             <div className="space-y-2">
               <label className="text-sm font-medium flex items-center gap-2">
