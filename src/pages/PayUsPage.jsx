@@ -9,14 +9,11 @@ import pb from '@/lib/pocketbaseClient';
 
 const PayUsPage = () => {
   const [bankDetails, setBankDetails] = useState({
-    bankName: 'State Bank of India',
-    accountName: 'Shakti HolyDay',
-    accountNumber: '392401501234',
-    ifscCode: 'SBIN0001234',
-    upiId: 'shaktiholyday@okaxis'
+    accountName: '',
+    upiId: ''
   });
   const [isLoading, setIsLoading] = useState(true);
-  const [qrCodeImage, setQrCodeImage] = useState('/images/packages/Shakti Payment QR.jpeg');
+  const [qrCodeImage, setQrCodeImage] = useState(null);
 
   useEffect(() => {
     const fetchPaymentInfo = async () => {
@@ -50,8 +47,7 @@ const PayUsPage = () => {
           if (savedQrCode) {
             setQrCodeImage(savedQrCode);
           } else {
-            // Default QR code file uploaded by user
-            setQrCodeImage('/images/packages/Shakti Payment QR.jpeg');
+            setQrCodeImage(null);
           }
         }
       } catch (error) {
@@ -111,22 +107,7 @@ const PayUsPage = () => {
                 </div>
                 <CardContent className="p-6">
                   <ul className="space-y-6">
-                    <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-lg hover:bg-muted/50 transition-colors">
-                      <div className="flex items-center gap-3 text-muted-foreground">
-                        <Building2 size={18} className="text-primary/70" />
-                        <span className="font-medium">Bank Name</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <span className="font-semibold text-foreground text-right">
-                          {bankDetails.bankName || 'Not available'}
-                        </span>
-                        {bankDetails.bankName && (
-                          <button onClick={() => handleCopy(bankDetails.bankName, 'Bank Name')} className="text-muted-foreground hover:text-primary transition-colors">
-                            <Copy size={16} />
-                          </button>
-                        )}
-                      </div>
-                    </li>
+
 
                     <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-lg hover:bg-muted/50 transition-colors">
                       <div className="flex items-center gap-3 text-muted-foreground">
@@ -145,39 +126,7 @@ const PayUsPage = () => {
                       </div>
                     </li>
 
-                    <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-lg hover:bg-muted/50 transition-colors">
-                      <div className="flex items-center gap-3 text-muted-foreground">
-                        <CreditCard size={18} className="text-primary/70" />
-                        <span className="font-medium">Account Number</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <span className="font-semibold text-foreground tracking-wider text-right">
-                          {bankDetails.accountNumber || 'Not available'}
-                        </span>
-                        {bankDetails.accountNumber && (
-                          <button onClick={() => handleCopy(bankDetails.accountNumber, 'Account Number')} className="text-muted-foreground hover:text-primary transition-colors">
-                            <Copy size={16} />
-                          </button>
-                        )}
-                      </div>
-                    </li>
 
-                    <li className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 rounded-lg hover:bg-muted/50 transition-colors">
-                      <div className="flex items-center gap-3 text-muted-foreground">
-                        <Hash size={18} className="text-primary/70" />
-                        <span className="font-medium">IFSC Code</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <span className="font-semibold text-foreground tracking-wider text-right">
-                          {bankDetails.ifscCode || 'Not available'}
-                        </span>
-                        {bankDetails.ifscCode && (
-                          <button onClick={() => handleCopy(bankDetails.ifscCode, 'IFSC Code')} className="text-muted-foreground hover:text-primary transition-colors">
-                            <Copy size={16} />
-                          </button>
-                        )}
-                      </div>
-                    </li>
                   </ul>
                 </CardContent>
               </Card>

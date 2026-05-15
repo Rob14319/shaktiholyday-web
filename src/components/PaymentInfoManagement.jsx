@@ -7,10 +7,7 @@ import pb from '@/lib/pocketbaseClient';
 
 const PaymentInfoManagement = () => {
   const [bankDetails, setBankDetails] = useState({
-    bankName: '',
     accountName: '',
-    accountNumber: '',
-    ifscCode: '',
     upiId: ''
   });
   const [qrCodeImage, setQrCodeImage] = useState(null);
@@ -123,19 +120,7 @@ const PaymentInfoManagement = () => {
       <CardContent>
         <div className="space-y-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="space-y-2">
-              <label className="text-sm font-medium flex items-center gap-2">
-                <Building2 size={16} className="text-primary" /> Bank Name
-              </label>
-              <input 
-                type="text" 
-                name="bankName"
-                value={bankDetails.bankName} 
-                onChange={handleChange}
-                className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                placeholder="e.g. State Bank of India"
-              />
-            </div>
+
             
             <div className="space-y-2">
               <label className="text-sm font-medium flex items-center gap-2">
@@ -151,33 +136,7 @@ const PaymentInfoManagement = () => {
               />
             </div>
             
-            <div className="space-y-2">
-              <label className="text-sm font-medium flex items-center gap-2">
-                <CreditCard size={16} className="text-primary" /> Account Number
-              </label>
-              <input 
-                type="text" 
-                name="accountNumber"
-                value={bankDetails.accountNumber} 
-                onChange={handleChange}
-                className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                placeholder="Account Number"
-              />
-            </div>
-            
-            <div className="space-y-2">
-              <label className="text-sm font-medium flex items-center gap-2">
-                <Hash size={16} className="text-primary" /> IFSC Code
-              </label>
-              <input 
-                type="text" 
-                name="ifscCode"
-                value={bankDetails.ifscCode} 
-                onChange={handleChange}
-                className="w-full h-10 px-3 rounded-md border border-input bg-background text-sm focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                placeholder="e.g. SBIN0001234"
-              />
-            </div>
+
  
             <div className="space-y-2 md:col-span-2">
               <label className="text-sm font-medium flex items-center gap-2">
