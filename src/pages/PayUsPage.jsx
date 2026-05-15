@@ -14,7 +14,7 @@ const PayUsPage = () => {
     upiId: ''
   });
   const [isLoading, setIsLoading] = useState(true);
-  const [qrCodeImage, setQrCodeImage] = useState(null);
+  const [qrCodeImage, setQrCodeImage] = useState('/images/packages/Shakti Payment QR.jpeg');
 
   useEffect(() => {
     const fetchPaymentInfo = async () => {
@@ -48,7 +48,8 @@ const PayUsPage = () => {
           if (savedQrCode) {
             setQrCodeImage(savedQrCode);
           } else {
-            setQrCodeImage(null);
+            // Default QR code file already uploaded by user
+            setQrCodeImage('/images/packages/Shakti Payment QR.jpeg');
           }
         }
       } catch (error) {
