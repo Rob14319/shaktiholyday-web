@@ -455,5 +455,45 @@ export const packagesData = [
     "images": ["/images/packages/himachal_treks.webp"],
     "price": 16999,
     "itinerary": "Day 1: Departure from Delhi to Manali/Kasol. \nDay 2: Drive to Trek Starting Point. \nDay 3-4: Ascend through Valleys and Forests. \nDay 5: Descend to Base and Explore Local Culture. \nDay 6: Return to Delhi."
+  },
+  {
+    "id": "leh-ladakh-adventure",
+    "title": "Leh Ladakh Adventure",
+    "description": "Experience the rugged beauty of the high-altitude desert, serene lakes, and ancient monasteries.",
+    "destination": "Leh, Ladakh",
+    "duration": "7 Nights 8 Days",
+    "images": ["/images/packages/leh_ladakh.png"],
+    "price": 28999,
+    "itinerary": "Day 1: Arrival in Leh. \nDay 2: Leh Local Sightseeing. \nDay 3: Leh to Nubra Valley via Khardung La. \nDay 4: Nubra Valley to Turtuk and back. \nDay 5: Nubra Valley to Pangong Lake. \nDay 6: Pangong Lake to Leh. \nDay 7: Leh to Alchi and back. \nDay 8: Departure from Leh."
+  },
+  {
+    "id": "kashmir-paradise-tour",
+    "title": "Kashmir Paradise Tour",
+    "description": "Explore the \"Heaven on Earth\" with a stay in a houseboat and visits to the most beautiful valleys.",
+    "destination": "Srinagar, Gulmarg, Pahalgam",
+    "duration": "5 Nights 6 Days",
+    "images": ["/images/packages/kashmir_houseboat.png"],
+    "price": 19999,
+    "itinerary": "Day 1: Arrival in Srinagar. \nDay 2: Srinagar to Gulmarg. \nDay 3: Gulmarg to Pahalgam. \nDay 4: Pahalgam Sightseeing. \nDay 5: Pahalgam to Srinagar. \nDay 6: Departure from Srinagar."
+  },
+  {
+    "id": "grand-himachal-spiritual",
+    "title": "Grand Himachal Spiritual Journey",
+    "description": "A comprehensive tour of the most scenic and spiritual destinations in Himachal Pradesh: Shimla, Manali, Dharamshala, Dalhousie, Kasol, and Manikaran.",
+    "destination": "Himachal Pradesh",
+    "duration": "8 Nights 9 Days",
+    "images": ["/images/packages/himachal_grand.png"],
+    "price": 26999,
+    "itinerary": "Day 1: Arrival in Shimla. \nDay 2: Shimla Sightseeing. \nDay 3: Shimla to Manali. \nDay 4: Manali Local Sightseeing. \nDay 5: Manali to Kasol & Manikaran. \nDay 6: Kasol to Dharamshala. \nDay 7: Dharamshala Sightseeing. \nDay 8: Dharamshala to Dalhousie. \nDay 9: Departure from Dalhousie."
+  },
+  {
+    "id": "manali-quick-escape",
+    "title": "Manali Quick Escape",
+    "description": "A short and sweet trip to the heart of the mountains, featuring Manali local sightseeing and Solang Valley.",
+    "destination": "Manali, HP",
+    "duration": "2 Nights 3 Days",
+    "images": ["/images/packages/Himachal.webp"],
+    "price": 8999,
+    "itinerary": "Day 1: Arrival in Manali. \nDay 2: Manali Local Sightseeing & Solang Valley. \nDay 3: Departure from Manali."
   }
 ];
