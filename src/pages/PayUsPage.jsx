@@ -3,8 +3,9 @@ import { Helmet } from 'react-helmet';
 import Header from '@/components/Header.jsx';
 import Footer from '@/components/Footer.jsx';
 import { Card, CardContent } from '@/components/ui/card';
-import { Building2, User, CreditCard, Hash, Copy, CheckCircle2 } from 'lucide-react';
+import { Building2, User, CreditCard, Hash, Copy, CheckCircle2, Loader2 } from 'lucide-react';
 import { toast } from 'sonner';
+import pb from '@/lib/pocketbaseClient';
 
 const PayUsPage = () => {
   const [bankDetails, setBankDetails] = useState({
@@ -14,23 +15,52 @@ const PayUsPage = () => {
     ifscCode: '',
     upiId: ''
   });
-  const [qrCodeImage, setQrCodeImage] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Load from localStorage on mount
-    const savedDetails = localStorage.getItem('paymentBankDetails');
-    if (savedDetails) {
+    const fetchPaymentInfo = async () => {
       try {
-        setBankDetails(JSON.parse(savedDetails));
-      } catch (e) {
-        console.error('Failed to parse bank details from localStorage');
+        // Try to fetch from PocketBase first
+        const records = await pb.collection('packages').getList(1, 1, {
+          filter: 'title = "PAYMENT_INFO_CONFIG"',
+          $autoCancel: false
+        });
+
+        if (records.items.length > 0) {
+          const record = records.items[0];
+          try {
+            const details = JSON.parse(record.description);
+            setBankDetails(details);
+            
+            if (record.images && record.images.length > 0) {
+              const url = pb.files.getUrl(record, record.images[0]);
+              setQrCodeImage(url);
+            }
+          } catch (e) {
+            console.error('Failed to parse payment details from record');
+          }
+        } else {
+          // Fallback to localStorage if no record in DB
+          const savedDetails = localStorage.getItem('paymentBankDetails');
+          if (savedDetails) {
+            setBankDetails(JSON.parse(savedDetails));
+          }
+          const savedQrCode = localStorage.getItem('paymentQrCode');
+          if (savedQrCode) {
+            setQrCodeImage(savedQrCode);
+          } else {
+            // Default QR code file uploaded by user
+            setQrCodeImage('/images/packages/Shakti Payment QR.jpeg');
+          }
+        }
+      } catch (error) {
+        console.error('Failed to fetch payment info from PocketBase', error);
+      } finally {
+        setIsLoading(false);
       }
-    }
-    
-    const savedQrCode = localStorage.getItem('paymentQrCode');
-    if (savedQrCode) {
-      setQrCodeImage(savedQrCode);
-    }
+    };
+
+    fetchPaymentInfo();
   }, []);
 
   const handleCopy = (text, fieldName) => {
@@ -53,14 +83,21 @@ const PayUsPage = () => {
 
         <main className="flex-grow py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">
-                Secure Payment
-              </h1>
-              <p className="text-lg text-muted-foreground">
-                Please use the details below to complete your payment for your sacred journey.
-              </p>
-            </div>
+            {isLoading ? (
+              <div className="flex flex-col items-center justify-center py-20">
+                <Loader2 className="w-12 h-12 animate-spin text-primary mb-4" />
+                <p className="text-muted-foreground animate-pulse">Loading secure payment details...</p>
+              </div>
+            ) : (
+              <>
+                <div className="text-center mb-12">
+                  <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4">
+                    Secure Payment
+                  </h1>
+                  <p className="text-lg text-muted-foreground">
+                    Please use the details below to complete your payment for your sacred journey.
+                  </p>
+                </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Bank Details Section */}
@@ -201,6 +238,8 @@ const PayUsPage = () => {
               </div>
             </div>
 
+              </>
+            )}
           </div>
         </main>
 

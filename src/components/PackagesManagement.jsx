@@ -37,7 +37,8 @@ const PackagesManagement = () => {
         sort: '-created',
         $autoCancel: false
       });
-      setPackages(records);
+      // Filter out internal config records
+      setPackages(records.filter(r => r.title !== 'PAYMENT_INFO_CONFIG'));
     } catch (error) {
       toast.error('Failed to load packages');
     } finally {
